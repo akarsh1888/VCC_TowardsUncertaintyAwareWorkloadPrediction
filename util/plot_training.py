@@ -10,7 +10,7 @@ def plot_loss(history, title):
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
-    plt.savefig("img/loss/loss_" + title + ".png")
+    plt.savefig("/content/drive/MyDrive/img/loss/loss_" + title + ".png")
 
 
 def plot_series(series, series2, start=0, end=None, label1="", label2="", title="output"):
@@ -21,7 +21,7 @@ def plot_series(series, series2, start=0, end=None, label1="", label2="", title=
     plt.ylabel("Value")
     plt.legend()
     plt.grid(True)
-    plt.savefig("img/preds/" + title + ".png")
+    plt.savefig("/content/drive/MyDrive/img/preds/" + title + ".png")
 
 
 def plot_series_interval(series, series2, std, start=0, end=None, label1="", label2="", title="output"):
@@ -37,7 +37,7 @@ def plot_series_interval(series, series2, std, start=0, end=None, label1="", lab
     plt.ylabel("Resource unit")
     plt.legend()
     plt.grid(True)
-    plt.savefig("img/preds/" + title + ".png")
+    plt.savefig("/content/drive/MyDrive/img/preds/" + title + ".png")
 
 
 def plot_bayes_series(series, series2, min, max, start=0, end=None, label1="", label2="", title="output"):
@@ -49,4 +49,4 @@ def plot_bayes_series(series, series2, min, max, start=0, end=None, label1="", l
     plt.ylabel("Value")
     plt.legend()
     plt.grid(True)
-    plt.savefig("img/preds/" + title + ".png")
+    plt.savefig("/content/drive/MyDrive/img/preds/" + title + ".png")
