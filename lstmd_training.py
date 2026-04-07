@@ -11,7 +11,7 @@ from tensorflow import keras
 from util import dataset, plot_training, save_results, multipleDataset
 from datetime import datetime
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 wins = [288]
 hs = [2]
 resources = ['cpu', 'mem']
@@ -79,7 +79,7 @@ for tuning_rate in tuning_rates:
                             'second_lstm_dim': int(parameters['second_lstm_dim']),
                             'first_dense_dim': int(parameters['first_dense_dim']),
                             'first_dense_activation': dense_act,
-                            'mlp_units': np.array(parameters['mlp_units'][1:-1].split(','), dtype=np.int),
+                            'mlp_units': np.array(parameters['mlp_units'][1:-1].split(','), dtype=int),
                             'dense_kernel_init': parameters['dense_kernel_init'],
                             'batch_size': int(parameters['batch_size']),
                             'epochs': int(parameters['epochs']),
@@ -142,13 +142,13 @@ for tuning_rate in tuning_rates:
 
                             if tuning:
                                 df_tuning_times = pd.DataFrame({'time': tuning_times})
-                                df_tuning_times.to_csv("time/" + experiment_name + 'tuning_time.csv')
+                                df_tuning_times.to_csv("/content/drive/MyDrive/time/" + experiment_name + 'tuning_time.csv')
                             else:
                                 df_training_time = pd.DataFrame({'time': training_times})
-                                df_training_time.to_csv("time/" + experiment_name + 'training_time.csv')
+                                df_training_time.to_csv("/content/drive/MyDrive/time/" + experiment_name + 'training_time.csv')
 
                                 df_inference_time = pd.DataFrame({'time': inference_times})
-                                df_inference_time.to_csv("time/" + experiment_name + 'inference_time.csv')
+                                df_inference_time.to_csv("/content/drive/MyDrive/time/" + experiment_name + 'inference_time.csv')
 
                             prediction_mean = best_prediction_mean
                             prediction_std = best_prediction_std

@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
-import talos
+# import talos
 from tensorflow import keras
 from tensorflow.keras import layers, Model
 from tensorflow.keras.layers import Dense, LSTM, Lambda
@@ -13,7 +13,8 @@ from util import custom_keras
 from models.model_interface import ModelInterface
 from sklearn.metrics import mean_squared_error
 from util import plot_training
-from keras.utils.vis_utils import plot_model
+# from keras.utils.vis_utils import plot_model
+from tensorflow.keras.utils import plot_model
 import tensorflow_probability as tfp
 from datetime import datetime
 import pickle
@@ -116,7 +117,7 @@ class LSTMPredictor(ModelInterface):
         x = LSTM(p['second_lstm_dim'])(x)
 
         for dim in p['mlp_units']:
-            x = Dense(dim, activation="relu")(x)
+            x = Dense(int(dim), activation="relu")(x)
 
         x = layers.Dense(p['first_dense_dim'], activation=p['first_dense_activation'])(x)
 
@@ -156,7 +157,7 @@ class LSTMPredictor(ModelInterface):
         x = LSTM(p['second_lstm_dim'])(x)
 
         for dim in p['mlp_units']:
-            x = Dense(dim, activation="relu")(x)
+            x = Dense(int(dim), activation="relu")(x)
 
         x = layers.Dense(p['first_dense_dim'], activation=p['first_dense_activation'])(x)
 

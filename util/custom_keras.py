@@ -18,6 +18,6 @@ class CustomSaveCheckpoint(tf.keras.callbacks.Callback):
             # self.dnn.save_model()
             # print('Model save id ', str(self.dnn.count_save - 1).zfill(4))
 
-    def on_train_end(self):
+    def on_train_end(self, logs=None):
         self.dnn.save_model()
         print('Model save id ', str(self.dnn.count_save - 1).zfill(4))

@@ -3,7 +3,7 @@ import numpy as np
 
 
 def save_output_csv(preds, labels, feature, filename, bivariate=False):
-    PATH = "res/output_" + filename + ".csv"
+    PATH = "/content/drive/MyDrive/res/output_" + filename + ".csv"
     if bivariate:
         dct = {'avgcpu': preds[:, 0],
                'labelsavgcpu': labels[:, 0],
@@ -20,7 +20,7 @@ def save_output_csv(preds, labels, feature, filename, bivariate=False):
 
 
 def save_uncertainty_csv(preds, std, labels, feature, filename, bivariate=False):
-    PATH = "res/output_" + filename + ".csv"
+    PATH = "/content/drive/MyDrive/res/output_" + filename + ".csv"
 
     if bivariate:
         std = np.array(std)
@@ -50,7 +50,7 @@ def save_params_csv(p, filename):
 
 
 def save_bayes_csv(preds, min, max, labels, feature, filename):
-    PATH = "res/vidp_" + filename + ".csv"
+    PATH = "/content/drive/MyDrive/res/vidp_" + filename + ".csv"
     dct = {feature: preds,
            'min': min,
            'max': max,
@@ -60,7 +60,7 @@ def save_bayes_csv(preds, min, max, labels, feature, filename):
 
 
 def save_errors(mses, maes, filename):
-    PATH = "res/errors_" + filename + ".csv"
+    PATH = "/content/drive/MyDrive/res/errors_" + filename + ".csv"
     dct = {'MSE': mses,
            'MAE': maes}
     df = pd.DataFrame(dct)

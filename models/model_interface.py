@@ -10,9 +10,10 @@ class ModelInterface:
         self.model = None
         self.train_model = None
         self.verbose = False
-        self.model_path = './saved_models/'
+        # self.model_path = './saved_models/'
+        self.model_path = '/content/drive/MyDrive/saved_models/'
         self.count_save = 0
-        self.best_val_loss = np.Inf
+        self.best_val_loss = np.inf
         self.input_shape = None
 
     def predict(self, X):
