@@ -54,7 +54,7 @@ class Dataset:
         # Input files
         self.data_file = filenames
         # self.data_path = './saved_data/'
-        self.data_path = '/content/drive/MyDrive/saved_data/'
+        self.data_path = '/content/drive/MyDrive/VCC_TowardsUncertaintyAwareWorkloadPrediction/'
 
         # Train/test split
         self.train_split = 0.8
