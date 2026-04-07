@@ -236,6 +236,6 @@ class LSTMDPredictor(ModelInterface):
         if self.train_model is None:
             print("ERROR: the model must be available before saving it")
             return
-        self.train_model.save_weights(self.model_path + self.name + str(self.count_save).zfill(4) + '_weights.h5')
+        self.train_model.save_weights(self.model_path + self.name + str(self.count_save).zfill(4) + '.weights.h5')
 
         self.count_save += 1
