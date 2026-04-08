@@ -115,7 +115,8 @@ for tuning_rate in tuning_rates:
                                         ds.y_test[i * tuning_rate:(i + 1) * tuning_rate], p)
                                     tuning_times.append(tuning_time)
 
-                            train_distribution = train_model(ds.X_train)
+                            # train_distribution = train_model(ds.X_train)
+                            train_distribution = train_model.predict(ds.X_train, batch_size=128)
                             train_mean = train_distribution.mean().numpy()
                             train_std = train_distribution.stddev().numpy()
 
