@@ -88,11 +88,13 @@ class HBNNPredictor(ModelInterface):
             "decay": [1e-3, 1e-4, 1e-5],
         }
 
-    def compute_predictions(self, model, X_test, y_test, iterations=1000, batch_size=128):
+    def compute_predictions(
+        self, model, X_test, y_test, iterations=1000, batch_size=128
+    ):
         all_means = []
         all_stdvs = []
         for i in range(0, len(X_test), batch_size):
-            batch = X_test[i:i + batch_size]
+            batch = X_test[i : i + batch_size]
             dist = model(batch)
             all_means.append(dist.mean().numpy())
             all_stdvs.append(dist.stddev().numpy())
