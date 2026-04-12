@@ -1,0 +1,811 @@
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 100, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 1 WIN: 288
+Epoch 1/100
+New best validation loss:  -1.3455257415771484
+525/525 - 20s - loss: -7.8581e-02 - mse: 0.2575 - mae: 0.3504 - val_loss: -1.3455e+00 - val_mse: 0.0444 - val_mae: 0.1537 - 20s/epoch - 37ms/step
+Epoch 2/100
+New best validation loss:  -1.4635320901870728
+525/525 - 20s - loss: -1.4105e+00 - mse: 0.0441 - mae: 0.1529 - val_loss: -1.4635e+00 - val_mse: 0.0418 - val_mae: 0.1483 - 20s/epoch - 38ms/step
+Epoch 3/100
+525/525 - 16s - loss: -1.4751e+00 - mse: 0.0415 - mae: 0.1481 - val_loss: -1.4319e+00 - val_mse: 0.0391 - val_mae: 0.1438 - 16s/epoch - 30ms/step
+Epoch 4/100
+New best validation loss:  -1.5284101963043213
+525/525 - 18s - loss: -1.5141e+00 - mse: 0.0389 - mae: 0.1441 - val_loss: -1.5284e+00 - val_mse: 0.0376 - val_mae: 0.1413 - 18s/epoch - 34ms/step
+Epoch 5/100
+New best validation loss:  -1.566579818725586
+525/525 - 16s - loss: -1.5417e+00 - mse: 0.0378 - mae: 0.1419 - val_loss: -1.5666e+00 - val_mse: 0.0374 - val_mae: 0.1409 - 16s/epoch - 30ms/step
+Epoch 6/100
+525/525 - 18s - loss: -1.5657e+00 - mse: 0.0368 - mae: 0.1401 - val_loss: -1.5631e+00 - val_mse: 0.0369 - val_mae: 0.1399 - 18s/epoch - 34ms/step
+Epoch 7/100
+New best validation loss:  -1.6024856567382812
+525/525 - 16s - loss: -1.5803e+00 - mse: 0.0362 - mae: 0.1388 - val_loss: -1.6025e+00 - val_mse: 0.0357 - val_mae: 0.1376 - 16s/epoch - 30ms/step
+Epoch 8/100
+New best validation loss:  -1.6186180114746094
+525/525 - 17s - loss: -1.5951e+00 - mse: 0.0355 - mae: 0.1376 - val_loss: -1.6186e+00 - val_mse: 0.0355 - val_mae: 0.1370 - 17s/epoch - 33ms/step
+Epoch 9/100
+New best validation loss:  -1.6243617534637451
+525/525 - 17s - loss: -1.6087e+00 - mse: 0.0355 - mae: 0.1374 - val_loss: -1.6244e+00 - val_mse: 0.0345 - val_mae: 0.1351 - 17s/epoch - 31ms/step
+Epoch 10/100
+New best validation loss:  -1.6294413805007935
+525/525 - 18s - loss: -1.6211e+00 - mse: 0.0350 - mae: 0.1359 - val_loss: -1.6294e+00 - val_mse: 0.0348 - val_mae: 0.1359 - 18s/epoch - 34ms/step
+Epoch 11/100
+New best validation loss:  -1.6448085308074951
+525/525 - 18s - loss: -1.6309e+00 - mse: 0.0346 - mae: 0.1354 - val_loss: -1.6448e+00 - val_mse: 0.0354 - val_mae: 0.1365 - 18s/epoch - 34ms/step
+Epoch 12/100
+New best validation loss:  -2.458418130874634
+525/525 - 16s - loss: -1.7611e+00 - mse: 0.0304 - mae: 0.1262 - val_loss: -2.4584e+00 - val_mse: 0.0109 - val_mae: 0.0803 - 16s/epoch - 30ms/step
+Epoch 13/100
+New best validation loss:  -2.6860079765319824
+525/525 - 18s - loss: -2.5980e+00 - mse: 0.0092 - mae: 0.0740 - val_loss: -2.6860e+00 - val_mse: 0.0084 - val_mae: 0.0704 - 18s/epoch - 34ms/step
+Epoch 14/100
+New best validation loss:  -2.71207594871521
+525/525 - 16s - loss: -2.6854e+00 - mse: 0.0084 - mae: 0.0705 - val_loss: -2.7121e+00 - val_mse: 0.0081 - val_mae: 0.0692 - 16s/epoch - 31ms/step
+Epoch 15/100
+New best validation loss:  -2.7330217361450195
+525/525 - 18s - loss: -2.7174e+00 - mse: 0.0081 - mae: 0.0690 - val_loss: -2.7330e+00 - val_mse: 0.0079 - val_mae: 0.0682 - 18s/epoch - 34ms/step
+Epoch 16/100
+New best validation loss:  -2.7430567741394043
+525/525 - 17s - loss: -2.7370e+00 - mse: 0.0079 - mae: 0.0682 - val_loss: -2.7431e+00 - val_mse: 0.0078 - val_mae: 0.0678 - 17s/epoch - 31ms/step
+Epoch 17/100
+525/525 - 18s - loss: -2.7454e+00 - mse: 0.0078 - mae: 0.0681 - val_loss: -2.7323e+00 - val_mse: 0.0077 - val_mae: 0.0675 - 18s/epoch - 34ms/step
+Epoch 18/100
+525/525 - 15s - loss: -2.7536e+00 - mse: 0.0077 - mae: 0.0674 - val_loss: -2.7338e+00 - val_mse: 0.0077 - val_mae: 0.0676 - 15s/epoch - 29ms/step
+Epoch 19/100
+New best validation loss:  -2.7610023021698
+525/525 - 18s - loss: -2.7620e+00 - mse: 0.0076 - mae: 0.0671 - val_loss: -2.7610e+00 - val_mse: 0.0076 - val_mae: 0.0669 - 18s/epoch - 34ms/step
+Epoch 20/100
+New best validation loss:  -2.773163318634033
+525/525 - 16s - loss: -2.7705e+00 - mse: 0.0076 - mae: 0.0668 - val_loss: -2.7732e+00 - val_mse: 0.0076 - val_mae: 0.0670 - 16s/epoch - 30ms/step
+Epoch 21/100
+525/525 - 18s - loss: -2.7752e+00 - mse: 0.0075 - mae: 0.0669 - val_loss: -2.7726e+00 - val_mse: 0.0075 - val_mae: 0.0666 - 18s/epoch - 34ms/step
+Epoch 22/100
+New best validation loss:  -2.79001522064209
+525/525 - 15s - loss: -2.7817e+00 - mse: 0.0074 - mae: 0.0663 - val_loss: -2.7900e+00 - val_mse: 0.0073 - val_mae: 0.0658 - 15s/epoch - 29ms/step
+Epoch 23/100
+525/525 - 18s - loss: -2.7883e+00 - mse: 0.0074 - mae: 0.0660 - val_loss: -2.7783e+00 - val_mse: 0.0074 - val_mae: 0.0662 - 18s/epoch - 34ms/step
+Epoch 24/100
+525/525 - 15s - loss: -2.7881e+00 - mse: 0.0074 - mae: 0.0660 - val_loss: -2.7884e+00 - val_mse: 0.0074 - val_mae: 0.0662 - 15s/epoch - 29ms/step
+Epoch 25/100
+New best validation loss:  -2.800077438354492
+525/525 - 18s - loss: -2.7941e+00 - mse: 0.0073 - mae: 0.0657 - val_loss: -2.8001e+00 - val_mse: 0.0075 - val_mae: 0.0664 - 18s/epoch - 34ms/step
+Epoch 26/100
+525/525 - 16s - loss: -2.7939e+00 - mse: 0.0073 - mae: 0.0659 - val_loss: -2.7796e+00 - val_mse: 0.0074 - val_mae: 0.0659 - 16s/epoch - 30ms/step
+Epoch 27/100
+525/525 - 18s - loss: -2.7988e+00 - mse: 0.0072 - mae: 0.0655 - val_loss: -2.7951e+00 - val_mse: 0.0073 - val_mae: 0.0659 - 18s/epoch - 34ms/step
+Epoch 28/100
+New best validation loss:  -2.806630849838257
+525/525 - 15s - loss: -2.7986e+00 - mse: 0.0073 - mae: 0.0659 - val_loss: -2.8066e+00 - val_mse: 0.0072 - val_mae: 0.0654 - 15s/epoch - 29ms/step
+Epoch 29/100
+525/525 - 18s - loss: -2.8046e+00 - mse: 0.0073 - mae: 0.0656 - val_loss: -2.7856e+00 - val_mse: 0.0072 - val_mae: 0.0655 - 18s/epoch - 34ms/step
+Epoch 30/100
+525/525 - 16s - loss: -2.8080e+00 - mse: 0.0072 - mae: 0.0655 - val_loss: -2.7880e+00 - val_mse: 0.0071 - val_mae: 0.0651 - 16s/epoch - 30ms/step
+Epoch 31/100
+New best validation loss:  -2.815190315246582
+525/525 - 19s - loss: -2.8095e+00 - mse: 0.0072 - mae: 0.0652 - val_loss: -2.8152e+00 - val_mse: 0.0070 - val_mae: 0.0646 - 19s/epoch - 35ms/step
+Epoch 32/100
+New best validation loss:  -2.8193256855010986
+525/525 - 18s - loss: -2.8143e+00 - mse: 0.0072 - mae: 0.0651 - val_loss: -2.8193e+00 - val_mse: 0.0071 - val_mae: 0.0648 - 18s/epoch - 35ms/step
+Epoch 33/100
+New best validation loss:  -2.8218579292297363
+525/525 - 15s - loss: -2.8151e+00 - mse: 0.0071 - mae: 0.0650 - val_loss: -2.8219e+00 - val_mse: 0.0073 - val_mae: 0.0659 - 15s/epoch - 29ms/step
+Epoch 34/100
+525/525 - 18s - loss: -2.8181e+00 - mse: 0.0071 - mae: 0.0650 - val_loss: -2.8203e+00 - val_mse: 0.0072 - val_mae: 0.0655 - 18s/epoch - 33ms/step
+Epoch 35/100
+525/525 - 16s - loss: -2.8221e+00 - mse: 0.0071 - mae: 0.0648 - val_loss: -2.7986e+00 - val_mse: 0.0072 - val_mae: 0.0651 - 16s/epoch - 30ms/step
+Epoch 36/100
+525/525 - 18s - loss: -2.8237e+00 - mse: 0.0071 - mae: 0.0649 - val_loss: -2.8211e+00 - val_mse: 0.0071 - val_mae: 0.0650 - 18s/epoch - 34ms/step
+Epoch 37/100
+New best validation loss:  -2.8296077251434326
+525/525 - 16s - loss: -2.8254e+00 - mse: 0.0071 - mae: 0.0648 - val_loss: -2.8296e+00 - val_mse: 0.0071 - val_mae: 0.0647 - 16s/epoch - 31ms/step
+Epoch 38/100
+New best validation loss:  -2.8353025913238525
+525/525 - 20s - loss: -2.8285e+00 - mse: 0.0071 - mae: 0.0648 - val_loss: -2.8353e+00 - val_mse: 0.0070 - val_mae: 0.0644 - 20s/epoch - 39ms/step
+Epoch 39/100
+525/525 - 16s - loss: -2.8273e+00 - mse: 0.0071 - mae: 0.0646 - val_loss: -2.8305e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 16s/epoch - 30ms/step
+Epoch 40/100
+525/525 - 19s - loss: -2.8337e+00 - mse: 0.0070 - mae: 0.0642 - val_loss: -2.8312e+00 - val_mse: 0.0071 - val_mae: 0.0652 - 19s/epoch - 36ms/step
+Epoch 41/100
+New best validation loss:  -2.8402528762817383
+525/525 - 16s - loss: -2.8350e+00 - mse: 0.0070 - mae: 0.0642 - val_loss: -2.8403e+00 - val_mse: 0.0070 - val_mae: 0.0645 - 16s/epoch - 30ms/step
+Epoch 42/100
+New best validation loss:  -2.840350389480591
+525/525 - 18s - loss: -2.8392e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8404e+00 - val_mse: 0.0071 - val_mae: 0.0646 - 18s/epoch - 34ms/step
+Epoch 43/100
+525/525 - 16s - loss: -2.8370e+00 - mse: 0.0070 - mae: 0.0646 - val_loss: -2.8396e+00 - val_mse: 0.0069 - val_mae: 0.0641 - 16s/epoch - 31ms/step
+Epoch 44/100
+525/525 - 18s - loss: -2.8418e+00 - mse: 0.0070 - mae: 0.0644 - val_loss: -2.8399e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 18s/epoch - 34ms/step
+Epoch 45/100
+New best validation loss:  -2.8435909748077393
+525/525 - 18s - loss: -2.8466e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8436e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 18s/epoch - 34ms/step
+Epoch 46/100
+New best validation loss:  -2.8447115421295166
+525/525 - 16s - loss: -2.8453e+00 - mse: 0.0070 - mae: 0.0641 - val_loss: -2.8447e+00 - val_mse: 0.0069 - val_mae: 0.0640 - 16s/epoch - 31ms/step
+Epoch 47/100
+525/525 - 18s - loss: -2.8459e+00 - mse: 0.0069 - mae: 0.0641 - val_loss: -2.8321e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 18s/epoch - 34ms/step
+Epoch 48/100
+525/525 - 15s - loss: -2.8478e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8375e+00 - val_mse: 0.0069 - val_mae: 0.0642 - 15s/epoch - 29ms/step
+Epoch 49/100
+525/525 - 18s - loss: -2.8475e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8293e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 18s/epoch - 34ms/step
+Epoch 50/100
+New best validation loss:  -2.848198890686035
+525/525 - 15s - loss: -2.8512e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8482e+00 - val_mse: 0.0069 - val_mae: 0.0641 - 15s/epoch - 29ms/step
+Epoch 51/100
+525/525 - 17s - loss: -2.8529e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8447e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 17s/epoch - 33ms/step
+Epoch 52/100
+525/525 - 15s - loss: -2.8548e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8466e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 15s/epoch - 28ms/step
+Epoch 53/100
+New best validation loss:  -2.849926710128784
+525/525 - 18s - loss: -2.8540e+00 - mse: 0.0069 - mae: 0.0636 - val_loss: -2.8499e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 54/100
+525/525 - 15s - loss: -2.8563e+00 - mse: 0.0068 - mae: 0.0636 - val_loss: -2.8446e+00 - val_mse: 0.0069 - val_mae: 0.0640 - 15s/epoch - 29ms/step
+Epoch 55/100
+New best validation loss:  -2.8518426418304443
+525/525 - 17s - loss: -2.8567e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8518e+00 - val_mse: 0.0068 - val_mae: 0.0632 - 17s/epoch - 33ms/step
+Epoch 56/100
+525/525 - 15s - loss: -2.8570e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8304e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 15s/epoch - 29ms/step
+Epoch 57/100
+525/525 - 18s - loss: -2.8608e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8474e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 58/100
+New best validation loss:  -2.8538880348205566
+525/525 - 15s - loss: -2.8587e+00 - mse: 0.0068 - mae: 0.0636 - val_loss: -2.8539e+00 - val_mse: 0.0069 - val_mae: 0.0642 - 15s/epoch - 29ms/step
+Epoch 59/100
+525/525 - 18s - loss: -2.8618e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8476e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 18s/epoch - 34ms/step
+Epoch 60/100
+New best validation loss:  -2.860947847366333
+525/525 - 15s - loss: -2.8615e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8609e+00 - val_mse: 0.0068 - val_mae: 0.0632 - 15s/epoch - 29ms/step
+Epoch 61/100
+525/525 - 18s - loss: -2.8619e+00 - mse: 0.0068 - mae: 0.0632 - val_loss: -2.8572e+00 - val_mse: 0.0069 - val_mae: 0.0636 - 18s/epoch - 34ms/step
+Epoch 62/100
+525/525 - 15s - loss: -2.8633e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8409e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 15s/epoch - 29ms/step
+Epoch 63/100
+525/525 - 18s - loss: -2.8631e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8545e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 64/100
+525/525 - 15s - loss: -2.8637e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8562e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 15s/epoch - 29ms/step
+Epoch 65/100
+New best validation loss:  -2.8623557090759277
+525/525 - 17s - loss: -2.8643e+00 - mse: 0.0068 - mae: 0.0632 - val_loss: -2.8624e+00 - val_mse: 0.0067 - val_mae: 0.0632 - 17s/epoch - 33ms/step
+Epoch 66/100
+525/525 - 16s - loss: -2.8640e+00 - mse: 0.0068 - mae: 0.0632 - val_loss: -2.8582e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 16s/epoch - 31ms/step
+Epoch 67/100
+New best validation loss:  -2.8633055686950684
+525/525 - 19s - loss: -2.8641e+00 - mse: 0.0067 - mae: 0.0631 - val_loss: -2.8633e+00 - val_mse: 0.0067 - val_mae: 0.0629 - 19s/epoch - 36ms/step
+Epoch 68/100
+New best validation loss:  -2.8645761013031006
+525/525 - 17s - loss: -2.8668e+00 - mse: 0.0067 - mae: 0.0631 - val_loss: -2.8646e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 17s/epoch - 32ms/step
+Epoch 69/100
+525/525 - 17s - loss: -2.8672e+00 - mse: 0.0067 - mae: 0.0632 - val_loss: -2.8622e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 17s/epoch - 33ms/step
+Epoch 70/100
+525/525 - 18s - loss: -2.8697e+00 - mse: 0.0067 - mae: 0.0630 - val_loss: -2.8622e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 18s/epoch - 34ms/step
+Epoch 71/100
+525/525 - 17s - loss: -2.8710e+00 - mse: 0.0067 - mae: 0.0632 - val_loss: -2.8607e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 17s/epoch - 32ms/step
+Epoch 72/100
+525/525 - 17s - loss: -2.8673e+00 - mse: 0.0067 - mae: 0.0630 - val_loss: -2.8607e+00 - val_mse: 0.0067 - val_mae: 0.0631 - 17s/epoch - 33ms/step
+Epoch 73/100
+525/525 - 15s - loss: -2.8703e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8636e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 15s/epoch - 29ms/step
+Epoch 74/100
+525/525 - 20s - loss: -2.8731e+00 - mse: 0.0068 - mae: 0.0632 - val_loss: -2.8629e+00 - val_mse: 0.0067 - val_mae: 0.0631 - 20s/epoch - 38ms/step
+Epoch 75/100
+New best validation loss:  -2.8654215335845947
+525/525 - 18s - loss: -2.8706e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8654e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 18s/epoch - 35ms/step
+Epoch 76/100
+525/525 - 19s - loss: -2.8728e+00 - mse: 0.0067 - mae: 0.0628 - val_loss: -2.8444e+00 - val_mse: 0.0067 - val_mae: 0.0630 - 19s/epoch - 37ms/step
+Epoch 77/100
+525/525 - 16s - loss: -2.8729e+00 - mse: 0.0067 - mae: 0.0631 - val_loss: -2.8527e+00 - val_mse: 0.0067 - val_mae: 0.0632 - 16s/epoch - 30ms/step
+Epoch 78/100
+New best validation loss:  -2.869642972946167
+525/525 - 18s - loss: -2.8733e+00 - mse: 0.0067 - mae: 0.0628 - val_loss: -2.8696e+00 - val_mse: 0.0068 - val_mae: 0.0631 - 18s/epoch - 33ms/step
+Epoch 79/100
+525/525 - 16s - loss: -2.8747e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8545e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 16s/epoch - 30ms/step
+Epoch 80/100
+525/525 - 17s - loss: -2.8736e+00 - mse: 0.0067 - mae: 0.0631 - val_loss: -2.8693e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 17s/epoch - 33ms/step
+Epoch 81/100
+525/525 - 15s - loss: -2.8745e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8567e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 15s/epoch - 29ms/step
+Epoch 82/100
+525/525 - 17s - loss: -2.8758e+00 - mse: 0.0067 - mae: 0.0627 - val_loss: -2.8687e+00 - val_mse: 0.0067 - val_mae: 0.0629 - 17s/epoch - 33ms/step
+Epoch 83/100
+New best validation loss:  -2.8705966472625732
+525/525 - 16s - loss: -2.8747e+00 - mse: 0.0067 - mae: 0.0630 - val_loss: -2.8706e+00 - val_mse: 0.0066 - val_mae: 0.0627 - 16s/epoch - 31ms/step
+Epoch 84/100
+525/525 - 21s - loss: -2.8775e+00 - mse: 0.0067 - mae: 0.0627 - val_loss: -2.8607e+00 - val_mse: 0.0067 - val_mae: 0.0627 - 21s/epoch - 41ms/step
+Epoch 85/100
+525/525 - 19s - loss: -2.8766e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8589e+00 - val_mse: 0.0067 - val_mae: 0.0627 - 19s/epoch - 36ms/step
+Epoch 86/100
+525/525 - 16s - loss: -2.8774e+00 - mse: 0.0067 - mae: 0.0628 - val_loss: -2.8619e+00 - val_mse: 0.0067 - val_mae: 0.0630 - 16s/epoch - 30ms/step
+Epoch 87/100
+525/525 - 18s - loss: -2.8768e+00 - mse: 0.0067 - mae: 0.0626 - val_loss: -2.8705e+00 - val_mse: 0.0066 - val_mae: 0.0625 - 18s/epoch - 35ms/step
+Epoch 88/100
+525/525 - 16s - loss: -2.8793e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8585e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 16s/epoch - 30ms/step
+Epoch 89/100
+New best validation loss:  -2.873244047164917
+525/525 - 18s - loss: -2.8791e+00 - mse: 0.0066 - mae: 0.0625 - val_loss: -2.8732e+00 - val_mse: 0.0066 - val_mae: 0.0624 - 18s/epoch - 34ms/step
+Epoch 90/100
+New best validation loss:  -2.8743526935577393
+525/525 - 16s - loss: -2.8781e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8744e+00 - val_mse: 0.0066 - val_mae: 0.0623 - 16s/epoch - 30ms/step
+Epoch 91/100
+525/525 - 18s - loss: -2.8785e+00 - mse: 0.0066 - mae: 0.0627 - val_loss: -2.8641e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 18s/epoch - 34ms/step
+Epoch 92/100
+525/525 - 16s - loss: -2.8788e+00 - mse: 0.0067 - mae: 0.0628 - val_loss: -2.8678e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 16s/epoch - 30ms/step
+Epoch 93/100
+525/525 - 18s - loss: -2.8789e+00 - mse: 0.0066 - mae: 0.0626 - val_loss: -2.8722e+00 - val_mse: 0.0066 - val_mae: 0.0624 - 18s/epoch - 34ms/step
+Epoch 94/100
+525/525 - 16s - loss: -2.8820e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8732e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 16s/epoch - 30ms/step
+Epoch 95/100
+525/525 - 18s - loss: -2.8810e+00 - mse: 0.0066 - mae: 0.0626 - val_loss: -2.8730e+00 - val_mse: 0.0067 - val_mae: 0.0625 - 18s/epoch - 33ms/step
+Epoch 96/100
+New best validation loss:  -2.8763325214385986
+525/525 - 16s - loss: -2.8813e+00 - mse: 0.0066 - mae: 0.0627 - val_loss: -2.8763e+00 - val_mse: 0.0066 - val_mae: 0.0624 - 16s/epoch - 30ms/step
+Epoch 97/100
+525/525 - 18s - loss: -2.8800e+00 - mse: 0.0067 - mae: 0.0627 - val_loss: -2.8669e+00 - val_mse: 0.0067 - val_mae: 0.0628 - 18s/epoch - 33ms/step
+Epoch 98/100
+525/525 - 15s - loss: -2.8813e+00 - mse: 0.0067 - mae: 0.0627 - val_loss: -2.8723e+00 - val_mse: 0.0067 - val_mae: 0.0629 - 15s/epoch - 29ms/step
+Epoch 99/100
+525/525 - 18s - loss: -2.8818e+00 - mse: 0.0067 - mae: 0.0629 - val_loss: -2.8530e+00 - val_mse: 0.0067 - val_mae: 0.0632 - 18s/epoch - 34ms/step
+Epoch 100/100
+525/525 - 18s - loss: -2.8813e+00 - mse: 0.0066 - mae: 0.0626 - val_loss: -2.8738e+00 - val_mse: 0.0066 - val_mae: 0.0624 - 18s/epoch - 34ms/step
+Model save id  0000
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 100, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 1 WIN: 288
+Epoch 1/100
+New best validation loss:  -2.0764098167419434
+525/525 - 20s - loss: -7.0879e-01 - mse: 0.1948 - mae: 0.2823 - val_loss: -2.0764e+00 - val_mse: 0.0178 - val_mae: 0.1005 - 20s/epoch - 37ms/step
+Epoch 2/100
+New best validation loss:  -2.2474350929260254
+525/525 - 16s - loss: -2.2221e+00 - mse: 0.0154 - mae: 0.0932 - val_loss: -2.2474e+00 - val_mse: 0.0144 - val_mae: 0.0912 - 16s/epoch - 30ms/step
+Epoch 3/100
+New best validation loss:  -2.3830153942108154
+525/525 - 18s - loss: -2.3532e+00 - mse: 0.0132 - mae: 0.0868 - val_loss: -2.3830e+00 - val_mse: 0.0119 - val_mae: 0.0827 - 18s/epoch - 34ms/step
+Epoch 4/100
+New best validation loss:  -2.4832780361175537
+525/525 - 15s - loss: -2.4369e+00 - mse: 0.0116 - mae: 0.0819 - val_loss: -2.4833e+00 - val_mse: 0.0111 - val_mae: 0.0802 - 15s/epoch - 29ms/step
+Epoch 5/100
+525/525 - 18s - loss: -2.5065e+00 - mse: 0.0107 - mae: 0.0789 - val_loss: -2.4679e+00 - val_mse: 0.0105 - val_mae: 0.0783 - 18s/epoch - 34ms/step
+Epoch 6/100
+New best validation loss:  -2.529005527496338
+525/525 - 15s - loss: -2.5415e+00 - mse: 0.0101 - mae: 0.0771 - val_loss: -2.5290e+00 - val_mse: 0.0101 - val_mae: 0.0772 - 15s/epoch - 29ms/step
+Epoch 7/100
+New best validation loss:  -2.6077992916107178
+525/525 - 18s - loss: -2.5772e+00 - mse: 0.0096 - mae: 0.0753 - val_loss: -2.6078e+00 - val_mse: 0.0095 - val_mae: 0.0749 - 18s/epoch - 34ms/step
+Epoch 8/100
+525/525 - 15s - loss: -2.6130e+00 - mse: 0.0092 - mae: 0.0736 - val_loss: -2.6009e+00 - val_mse: 0.0091 - val_mae: 0.0735 - 15s/epoch - 29ms/step
+Epoch 9/100
+New best validation loss:  -2.65606689453125
+525/525 - 18s - loss: -2.6389e+00 - mse: 0.0088 - mae: 0.0723 - val_loss: -2.6561e+00 - val_mse: 0.0086 - val_mae: 0.0716 - 18s/epoch - 34ms/step
+Epoch 10/100
+New best validation loss:  -2.6739256381988525
+525/525 - 15s - loss: -2.6624e+00 - mse: 0.0086 - mae: 0.0714 - val_loss: -2.6739e+00 - val_mse: 0.0084 - val_mae: 0.0707 - 15s/epoch - 29ms/step
+Epoch 11/100
+525/525 - 18s - loss: -2.6767e+00 - mse: 0.0084 - mae: 0.0708 - val_loss: -2.6726e+00 - val_mse: 0.0081 - val_mae: 0.0690 - 18s/epoch - 34ms/step
+Epoch 12/100
+New best validation loss:  -2.7069602012634277
+525/525 - 15s - loss: -2.6923e+00 - mse: 0.0083 - mae: 0.0703 - val_loss: -2.7070e+00 - val_mse: 0.0080 - val_mae: 0.0687 - 15s/epoch - 29ms/step
+Epoch 13/100
+525/525 - 18s - loss: -2.7079e+00 - mse: 0.0082 - mae: 0.0697 - val_loss: -2.7023e+00 - val_mse: 0.0082 - val_mae: 0.0703 - 18s/epoch - 35ms/step
+Epoch 14/100
+New best validation loss:  -2.720418691635132
+525/525 - 16s - loss: -2.7186e+00 - mse: 0.0080 - mae: 0.0688 - val_loss: -2.7204e+00 - val_mse: 0.0080 - val_mae: 0.0689 - 16s/epoch - 31ms/step
+Epoch 15/100
+New best validation loss:  -2.7252719402313232
+525/525 - 18s - loss: -2.7238e+00 - mse: 0.0079 - mae: 0.0687 - val_loss: -2.7253e+00 - val_mse: 0.0081 - val_mae: 0.0694 - 18s/epoch - 35ms/step
+Epoch 16/100
+525/525 - 16s - loss: -2.7380e+00 - mse: 0.0078 - mae: 0.0682 - val_loss: -2.6993e+00 - val_mse: 0.0078 - val_mae: 0.0682 - 16s/epoch - 30ms/step
+Epoch 17/100
+New best validation loss:  -2.752405881881714
+525/525 - 19s - loss: -2.7423e+00 - mse: 0.0077 - mae: 0.0678 - val_loss: -2.7524e+00 - val_mse: 0.0077 - val_mae: 0.0679 - 19s/epoch - 36ms/step
+Epoch 18/100
+New best validation loss:  -2.765105724334717
+525/525 - 22s - loss: -2.7446e+00 - mse: 0.0078 - mae: 0.0678 - val_loss: -2.7651e+00 - val_mse: 0.0075 - val_mae: 0.0664 - 22s/epoch - 41ms/step
+Epoch 19/100
+New best validation loss:  -2.7661032676696777
+525/525 - 17s - loss: -2.7574e+00 - mse: 0.0076 - mae: 0.0672 - val_loss: -2.7661e+00 - val_mse: 0.0076 - val_mae: 0.0672 - 17s/epoch - 32ms/step
+Epoch 20/100
+525/525 - 19s - loss: -2.7601e+00 - mse: 0.0076 - mae: 0.0671 - val_loss: -2.7590e+00 - val_mse: 0.0075 - val_mae: 0.0669 - 19s/epoch - 36ms/step
+Epoch 21/100
+525/525 - 16s - loss: -2.7661e+00 - mse: 0.0076 - mae: 0.0670 - val_loss: -2.7648e+00 - val_mse: 0.0075 - val_mae: 0.0666 - 16s/epoch - 31ms/step
+Epoch 22/100
+New best validation loss:  -2.7702181339263916
+525/525 - 18s - loss: -2.7678e+00 - mse: 0.0075 - mae: 0.0667 - val_loss: -2.7702e+00 - val_mse: 0.0074 - val_mae: 0.0663 - 18s/epoch - 34ms/step
+Epoch 23/100
+New best validation loss:  -2.7795028686523438
+525/525 - 15s - loss: -2.7749e+00 - mse: 0.0075 - mae: 0.0665 - val_loss: -2.7795e+00 - val_mse: 0.0075 - val_mae: 0.0665 - 15s/epoch - 29ms/step
+Epoch 24/100
+New best validation loss:  -2.782888174057007
+525/525 - 18s - loss: -2.7790e+00 - mse: 0.0075 - mae: 0.0664 - val_loss: -2.7829e+00 - val_mse: 0.0074 - val_mae: 0.0661 - 18s/epoch - 34ms/step
+Epoch 25/100
+525/525 - 16s - loss: -2.7823e+00 - mse: 0.0074 - mae: 0.0662 - val_loss: -2.7667e+00 - val_mse: 0.0074 - val_mae: 0.0665 - 16s/epoch - 31ms/step
+Epoch 26/100
+New best validation loss:  -2.784236192703247
+525/525 - 18s - loss: -2.7824e+00 - mse: 0.0074 - mae: 0.0661 - val_loss: -2.7842e+00 - val_mse: 0.0075 - val_mae: 0.0667 - 18s/epoch - 34ms/step
+Epoch 27/100
+New best validation loss:  -2.7972750663757324
+525/525 - 18s - loss: -2.7863e+00 - mse: 0.0074 - mae: 0.0663 - val_loss: -2.7973e+00 - val_mse: 0.0073 - val_mae: 0.0660 - 18s/epoch - 34ms/step
+Epoch 28/100
+525/525 - 16s - loss: -2.7906e+00 - mse: 0.0073 - mae: 0.0659 - val_loss: -2.7758e+00 - val_mse: 0.0073 - val_mae: 0.0660 - 16s/epoch - 30ms/step
+Epoch 29/100
+New best validation loss:  -2.800150156021118
+525/525 - 18s - loss: -2.7929e+00 - mse: 0.0073 - mae: 0.0658 - val_loss: -2.8002e+00 - val_mse: 0.0073 - val_mae: 0.0659 - 18s/epoch - 34ms/step
+Epoch 30/100
+New best validation loss:  -2.80429744720459
+525/525 - 15s - loss: -2.7936e+00 - mse: 0.0073 - mae: 0.0657 - val_loss: -2.8043e+00 - val_mse: 0.0071 - val_mae: 0.0650 - 15s/epoch - 29ms/step
+Epoch 31/100
+525/525 - 18s - loss: -2.7994e+00 - mse: 0.0072 - mae: 0.0656 - val_loss: -2.7897e+00 - val_mse: 0.0073 - val_mae: 0.0658 - 18s/epoch - 34ms/step
+Epoch 32/100
+525/525 - 16s - loss: -2.8004e+00 - mse: 0.0073 - mae: 0.0658 - val_loss: -2.8023e+00 - val_mse: 0.0072 - val_mae: 0.0651 - 16s/epoch - 30ms/step
+Epoch 33/100
+525/525 - 18s - loss: -2.8018e+00 - mse: 0.0072 - mae: 0.0653 - val_loss: -2.7897e+00 - val_mse: 0.0073 - val_mae: 0.0660 - 18s/epoch - 34ms/step
+Epoch 34/100
+525/525 - 16s - loss: -2.8031e+00 - mse: 0.0073 - mae: 0.0657 - val_loss: -2.7903e+00 - val_mse: 0.0074 - val_mae: 0.0663 - 16s/epoch - 30ms/step
+Epoch 35/100
+525/525 - 18s - loss: -2.8057e+00 - mse: 0.0072 - mae: 0.0654 - val_loss: -2.7838e+00 - val_mse: 0.0073 - val_mae: 0.0658 - 18s/epoch - 34ms/step
+Epoch 36/100
+525/525 - 16s - loss: -2.8076e+00 - mse: 0.0073 - mae: 0.0657 - val_loss: -2.7680e+00 - val_mse: 0.0073 - val_mae: 0.0658 - 16s/epoch - 30ms/step
+Epoch 37/100
+New best validation loss:  -2.8179268836975098
+525/525 - 18s - loss: -2.8095e+00 - mse: 0.0072 - mae: 0.0653 - val_loss: -2.8179e+00 - val_mse: 0.0070 - val_mae: 0.0645 - 18s/epoch - 34ms/step
+Epoch 38/100
+525/525 - 16s - loss: -2.8125e+00 - mse: 0.0071 - mae: 0.0650 - val_loss: -2.8159e+00 - val_mse: 0.0070 - val_mae: 0.0647 - 16s/epoch - 30ms/step
+Epoch 39/100
+525/525 - 18s - loss: -2.8144e+00 - mse: 0.0071 - mae: 0.0649 - val_loss: -2.7888e+00 - val_mse: 0.0072 - val_mae: 0.0658 - 18s/epoch - 35ms/step
+Epoch 40/100
+525/525 - 16s - loss: -2.8162e+00 - mse: 0.0071 - mae: 0.0650 - val_loss: -2.7700e+00 - val_mse: 0.0071 - val_mae: 0.0650 - 16s/epoch - 30ms/step
+Epoch 41/100
+New best validation loss:  -2.818995237350464
+525/525 - 18s - loss: -2.8170e+00 - mse: 0.0071 - mae: 0.0648 - val_loss: -2.8190e+00 - val_mse: 0.0071 - val_mae: 0.0649 - 18s/epoch - 35ms/step
+Epoch 42/100
+525/525 - 16s - loss: -2.8155e+00 - mse: 0.0071 - mae: 0.0650 - val_loss: -2.8078e+00 - val_mse: 0.0071 - val_mae: 0.0649 - 16s/epoch - 30ms/step
+Epoch 43/100
+525/525 - 18s - loss: -2.8204e+00 - mse: 0.0071 - mae: 0.0647 - val_loss: -2.8043e+00 - val_mse: 0.0072 - val_mae: 0.0654 - 18s/epoch - 34ms/step
+Epoch 44/100
+New best validation loss:  -2.8270204067230225
+525/525 - 16s - loss: -2.8206e+00 - mse: 0.0071 - mae: 0.0649 - val_loss: -2.8270e+00 - val_mse: 0.0069 - val_mae: 0.0642 - 16s/epoch - 30ms/step
+Epoch 45/100
+525/525 - 18s - loss: -2.8237e+00 - mse: 0.0070 - mae: 0.0646 - val_loss: -2.8169e+00 - val_mse: 0.0072 - val_mae: 0.0654 - 18s/epoch - 34ms/step
+Epoch 46/100
+New best validation loss:  -2.834193468093872
+525/525 - 16s - loss: -2.8242e+00 - mse: 0.0071 - mae: 0.0648 - val_loss: -2.8342e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 16s/epoch - 30ms/step
+Epoch 47/100
+525/525 - 17s - loss: -2.8257e+00 - mse: 0.0070 - mae: 0.0646 - val_loss: -2.8303e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 17s/epoch - 33ms/step
+Epoch 48/100
+525/525 - 18s - loss: -2.8271e+00 - mse: 0.0071 - mae: 0.0647 - val_loss: -2.8265e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 18s/epoch - 33ms/step
+Epoch 49/100
+525/525 - 16s - loss: -2.8273e+00 - mse: 0.0070 - mae: 0.0646 - val_loss: -2.8338e+00 - val_mse: 0.0070 - val_mae: 0.0646 - 16s/epoch - 30ms/step
+Epoch 50/100
+525/525 - 18s - loss: -2.8277e+00 - mse: 0.0070 - mae: 0.0645 - val_loss: -2.8321e+00 - val_mse: 0.0071 - val_mae: 0.0648 - 18s/epoch - 35ms/step
+Epoch 51/100
+New best validation loss:  -2.8346571922302246
+525/525 - 15s - loss: -2.8233e+00 - mse: 0.0070 - mae: 0.0644 - val_loss: -2.8347e+00 - val_mse: 0.0071 - val_mae: 0.0650 - 15s/epoch - 29ms/step
+Epoch 52/100
+525/525 - 18s - loss: -2.8276e+00 - mse: 0.0070 - mae: 0.0646 - val_loss: -2.8251e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 18s/epoch - 34ms/step
+Epoch 53/100
+525/525 - 16s - loss: -2.8306e+00 - mse: 0.0070 - mae: 0.0644 - val_loss: -2.8322e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 16s/epoch - 31ms/step
+Epoch 54/100
+New best validation loss:  -2.838662624359131
+525/525 - 18s - loss: -2.8342e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8387e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 18s/epoch - 34ms/step
+Epoch 55/100
+New best validation loss:  -2.840179443359375
+525/525 - 15s - loss: -2.8309e+00 - mse: 0.0070 - mae: 0.0643 - val_loss: -2.8402e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 15s/epoch - 29ms/step
+Epoch 56/100
+525/525 - 18s - loss: -2.8350e+00 - mse: 0.0070 - mae: 0.0642 - val_loss: -2.8388e+00 - val_mse: 0.0069 - val_mae: 0.0641 - 18s/epoch - 34ms/step
+Epoch 57/100
+525/525 - 16s - loss: -2.8325e+00 - mse: 0.0070 - mae: 0.0644 - val_loss: -2.8140e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 16s/epoch - 30ms/step
+Epoch 58/100
+New best validation loss:  -2.842482566833496
+525/525 - 18s - loss: -2.8312e+00 - mse: 0.0070 - mae: 0.0644 - val_loss: -2.8425e+00 - val_mse: 0.0070 - val_mae: 0.0646 - 18s/epoch - 35ms/step
+Epoch 59/100
+525/525 - 16s - loss: -2.8346e+00 - mse: 0.0070 - mae: 0.0643 - val_loss: -2.8282e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 16s/epoch - 30ms/step
+Epoch 60/100
+525/525 - 19s - loss: -2.8361e+00 - mse: 0.0070 - mae: 0.0642 - val_loss: -2.8415e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 19s/epoch - 36ms/step
+Epoch 61/100
+525/525 - 16s - loss: -2.8366e+00 - mse: 0.0070 - mae: 0.0641 - val_loss: -2.8320e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 16s/epoch - 30ms/step
+Epoch 62/100
+525/525 - 18s - loss: -2.8377e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8413e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 18s/epoch - 35ms/step
+Epoch 63/100
+New best validation loss:  -2.844132661819458
+525/525 - 16s - loss: -2.8377e+00 - mse: 0.0069 - mae: 0.0641 - val_loss: -2.8441e+00 - val_mse: 0.0071 - val_mae: 0.0647 - 16s/epoch - 30ms/step
+Epoch 64/100
+New best validation loss:  -2.847602128982544
+525/525 - 18s - loss: -2.8387e+00 - mse: 0.0070 - mae: 0.0642 - val_loss: -2.8476e+00 - val_mse: 0.0069 - val_mae: 0.0636 - 18s/epoch - 35ms/step
+Epoch 65/100
+525/525 - 19s - loss: -2.8422e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8376e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 19s/epoch - 36ms/step
+Epoch 66/100
+525/525 - 16s - loss: -2.8424e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8462e+00 - val_mse: 0.0069 - val_mae: 0.0640 - 16s/epoch - 30ms/step
+Epoch 67/100
+525/525 - 18s - loss: -2.8412e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8413e+00 - val_mse: 0.0070 - val_mae: 0.0640 - 18s/epoch - 35ms/step
+Epoch 68/100
+525/525 - 15s - loss: -2.8414e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8462e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 15s/epoch - 28ms/step
+Epoch 69/100
+525/525 - 18s - loss: -2.8441e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8134e+00 - val_mse: 0.0071 - val_mae: 0.0651 - 18s/epoch - 33ms/step
+Epoch 70/100
+525/525 - 15s - loss: -2.8388e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8469e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 15s/epoch - 29ms/step
+Epoch 71/100
+New best validation loss:  -2.8502674102783203
+525/525 - 18s - loss: -2.8435e+00 - mse: 0.0069 - mae: 0.0641 - val_loss: -2.8503e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 72/100
+525/525 - 16s - loss: -2.8443e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8449e+00 - val_mse: 0.0069 - val_mae: 0.0640 - 16s/epoch - 30ms/step
+Epoch 73/100
+525/525 - 18s - loss: -2.8449e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8420e+00 - val_mse: 0.0070 - val_mae: 0.0643 - 18s/epoch - 34ms/step
+Epoch 74/100
+525/525 - 15s - loss: -2.8445e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8493e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 15s/epoch - 29ms/step
+Epoch 75/100
+525/525 - 18s - loss: -2.8465e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8306e+00 - val_mse: 0.0070 - val_mae: 0.0645 - 18s/epoch - 34ms/step
+Epoch 76/100
+525/525 - 16s - loss: -2.8464e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8242e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 16s/epoch - 30ms/step
+Epoch 77/100
+New best validation loss:  -2.8512470722198486
+525/525 - 18s - loss: -2.8483e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8512e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 18s/epoch - 34ms/step
+Epoch 78/100
+525/525 - 16s - loss: -2.8480e+00 - mse: 0.0069 - mae: 0.0640 - val_loss: -2.8459e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 16s/epoch - 30ms/step
+Epoch 79/100
+525/525 - 17s - loss: -2.8472e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8391e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 17s/epoch - 33ms/step
+Epoch 80/100
+525/525 - 15s - loss: -2.8471e+00 - mse: 0.0069 - mae: 0.0639 - val_loss: -2.8511e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 15s/epoch - 29ms/step
+Epoch 81/100
+525/525 - 18s - loss: -2.8492e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8416e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 18s/epoch - 34ms/step
+Epoch 82/100
+525/525 - 15s - loss: -2.8487e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8482e+00 - val_mse: 0.0067 - val_mae: 0.0627 - 15s/epoch - 29ms/step
+Epoch 83/100
+525/525 - 18s - loss: -2.8500e+00 - mse: 0.0069 - mae: 0.0636 - val_loss: -2.8506e+00 - val_mse: 0.0069 - val_mae: 0.0640 - 18s/epoch - 34ms/step
+Epoch 84/100
+525/525 - 15s - loss: -2.8513e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8486e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 15s/epoch - 28ms/step
+Epoch 85/100
+525/525 - 17s - loss: -2.8504e+00 - mse: 0.0068 - mae: 0.0636 - val_loss: -2.8462e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 17s/epoch - 33ms/step
+Epoch 86/100
+525/525 - 15s - loss: -2.8502e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8507e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 15s/epoch - 29ms/step
+Epoch 87/100
+New best validation loss:  -2.8546226024627686
+525/525 - 17s - loss: -2.8538e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8546e+00 - val_mse: 0.0068 - val_mae: 0.0633 - 17s/epoch - 33ms/step
+Epoch 88/100
+525/525 - 16s - loss: -2.8508e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8532e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 16s/epoch - 30ms/step
+Epoch 89/100
+New best validation loss:  -2.854954481124878
+525/525 - 18s - loss: -2.8524e+00 - mse: 0.0068 - mae: 0.0636 - val_loss: -2.8550e+00 - val_mse: 0.0069 - val_mae: 0.0638 - 18s/epoch - 34ms/step
+Epoch 90/100
+New best validation loss:  -2.8551242351531982
+525/525 - 16s - loss: -2.8534e+00 - mse: 0.0068 - mae: 0.0635 - val_loss: -2.8551e+00 - val_mse: 0.0068 - val_mae: 0.0636 - 16s/epoch - 30ms/step
+Epoch 91/100
+525/525 - 18s - loss: -2.8513e+00 - mse: 0.0069 - mae: 0.0638 - val_loss: -2.8471e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 92/100
+525/525 - 15s - loss: -2.8556e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8549e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 15s/epoch - 29ms/step
+Epoch 93/100
+525/525 - 17s - loss: -2.8535e+00 - mse: 0.0069 - mae: 0.0637 - val_loss: -2.8399e+00 - val_mse: 0.0068 - val_mae: 0.0636 - 17s/epoch - 33ms/step
+Epoch 94/100
+New best validation loss:  -2.8568356037139893
+525/525 - 16s - loss: -2.8552e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8568e+00 - val_mse: 0.0068 - val_mae: 0.0631 - 16s/epoch - 30ms/step
+Epoch 95/100
+525/525 - 18s - loss: -2.8570e+00 - mse: 0.0068 - mae: 0.0634 - val_loss: -2.8483e+00 - val_mse: 0.0068 - val_mae: 0.0634 - 18s/epoch - 33ms/step
+Epoch 96/100
+New best validation loss:  -2.8569138050079346
+525/525 - 16s - loss: -2.8569e+00 - mse: 0.0068 - mae: 0.0637 - val_loss: -2.8569e+00 - val_mse: 0.0068 - val_mae: 0.0636 - 16s/epoch - 30ms/step
+Epoch 97/100
+525/525 - 18s - loss: -2.8571e+00 - mse: 0.0068 - mae: 0.0633 - val_loss: -2.8528e+00 - val_mse: 0.0069 - val_mae: 0.0639 - 18s/epoch - 34ms/step
+Epoch 98/100
+525/525 - 18s - loss: -2.8582e+00 - mse: 0.0068 - mae: 0.0633 - val_loss: -2.8448e+00 - val_mse: 0.0068 - val_mae: 0.0636 - 18s/epoch - 34ms/step
+Epoch 99/100
+525/525 - 15s - loss: -2.8561e+00 - mse: 0.0068 - mae: 0.0633 - val_loss: -2.8491e+00 - val_mse: 0.0068 - val_mae: 0.0635 - 15s/epoch - 29ms/step
+Epoch 100/100
+525/525 - 17s - loss: -2.8596e+00 - mse: 0.0068 - mae: 0.0633 - val_loss: -2.8501e+00 - val_mse: 0.0067 - val_mae: 0.0632 - 17s/epoch - 33ms/step
+Model save id  0000
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 100, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 1 WIN: 288
+Epoch 1/100
+New best validation loss:  -2.6505215167999268
+525/525 - 19s - loss: -1.2798e+00 - mse: 0.1723 - mae: 0.2324 - val_loss: -2.6505e+00 - val_mse: 0.0083 - val_mae: 0.0703 - 19s/epoch - 37ms/step
+Epoch 2/100
+525/525 - 16s - loss: -2.6708e+00 - mse: 0.0082 - mae: 0.0698 - val_loss: -2.6488e+00 - val_mse: 0.0094 - val_mae: 0.0753 - 16s/epoch - 30ms/step
+Epoch 3/100
+New best validation loss:  -2.733968734741211
+525/525 - 18s - loss: -2.7102e+00 - mse: 0.0079 - mae: 0.0684 - val_loss: -2.7340e+00 - val_mse: 0.0079 - val_mae: 0.0686 - 18s/epoch - 34ms/step
+Epoch 4/100
+525/525 - 15s - loss: -2.7332e+00 - mse: 0.0077 - mae: 0.0675 - val_loss: -2.6903e+00 - val_mse: 0.0075 - val_mae: 0.0666 - 15s/epoch - 29ms/step
+Epoch 5/100
+New best validation loss:  -2.779003143310547
+525/525 - 18s - loss: -2.7518e+00 - mse: 0.0075 - mae: 0.0667 - val_loss: -2.7790e+00 - val_mse: 0.0078 - val_mae: 0.0680 - 18s/epoch - 34ms/step
+Epoch 6/100
+525/525 - 15s - loss: -2.7546e+00 - mse: 0.0075 - mae: 0.0669 - val_loss: -2.7660e+00 - val_mse: 0.0073 - val_mae: 0.0660 - 15s/epoch - 29ms/step
+Epoch 7/100
+New best validation loss:  -2.791059970855713
+525/525 - 19s - loss: -2.7623e+00 - mse: 0.0075 - mae: 0.0668 - val_loss: -2.7911e+00 - val_mse: 0.0076 - val_mae: 0.0670 - 19s/epoch - 37ms/step
+Epoch 8/100
+New best validation loss:  -2.8080496788024902
+525/525 - 16s - loss: -2.7740e+00 - mse: 0.0074 - mae: 0.0661 - val_loss: -2.8080e+00 - val_mse: 0.0071 - val_mae: 0.0648 - 16s/epoch - 30ms/step
+Epoch 9/100
+525/525 - 18s - loss: -2.7820e+00 - mse: 0.0073 - mae: 0.0659 - val_loss: -2.6826e+00 - val_mse: 0.0077 - val_mae: 0.0679 - 18s/epoch - 35ms/step
+Epoch 10/100
+New best validation loss:  -2.820568561553955
+525/525 - 16s - loss: -2.7781e+00 - mse: 0.0074 - mae: 0.0660 - val_loss: -2.8206e+00 - val_mse: 0.0072 - val_mae: 0.0653 - 16s/epoch - 30ms/step
+Epoch 11/100
+525/525 - 18s - loss: -2.7921e+00 - mse: 0.0073 - mae: 0.0656 - val_loss: -2.8072e+00 - val_mse: 0.0076 - val_mae: 0.0671 - 18s/epoch - 34ms/step
+Epoch 12/100
+New best validation loss:  -2.829479455947876
+525/525 - 16s - loss: -2.7969e+00 - mse: 0.0072 - mae: 0.0653 - val_loss: -2.8295e+00 - val_mse: 0.0070 - val_mae: 0.0640 - 16s/epoch - 30ms/step
+Epoch 13/100
+525/525 - 18s - loss: -2.7999e+00 - mse: 0.0072 - mae: 0.0650 - val_loss: -2.7791e+00 - val_mse: 0.0078 - val_mae: 0.0685 - 18s/epoch - 34ms/step
+Epoch 14/100
+525/525 - 18s - loss: -2.8082e+00 - mse: 0.0072 - mae: 0.0652 - val_loss: -2.8267e+00 - val_mse: 0.0070 - val_mae: 0.0642 - 18s/epoch - 35ms/step
+Epoch 15/100
+New best validation loss:  -2.8437492847442627
+525/525 - 16s - loss: -2.8131e+00 - mse: 0.0072 - mae: 0.0653 - val_loss: -2.8437e+00 - val_mse: 0.0069 - val_mae: 0.0637 - 16s/epoch - 30ms/step
+Epoch 16/100
+New best validation loss:  -2.8594815731048584
+525/525 - 18s - loss: -2.8380e+00 - mse: 0.0072 - mae: 0.0648 - val_loss: -2.8595e+00 - val_mse: 0.0072 - val_mae: 0.0645 - 18s/epoch - 34ms/step
+Epoch 17/100
+New best validation loss:  -2.886298179626465
+525/525 - 15s - loss: -2.8587e+00 - mse: 0.0072 - mae: 0.0646 - val_loss: -2.8863e+00 - val_mse: 0.0077 - val_mae: 0.0671 - 15s/epoch - 29ms/step
+Epoch 18/100
+525/525 - 18s - loss: -2.8870e+00 - mse: 0.0072 - mae: 0.0642 - val_loss: -2.8571e+00 - val_mse: 0.0084 - val_mae: 0.0702 - 18s/epoch - 35ms/step
+Epoch 19/100
+New best validation loss:  -2.8907344341278076
+525/525 - 15s - loss: -2.9051e+00 - mse: 0.0072 - mae: 0.0640 - val_loss: -2.8907e+00 - val_mse: 0.0062 - val_mae: 0.0591 - 15s/epoch - 29ms/step
+Epoch 20/100
+New best validation loss:  -2.9547183513641357
+525/525 - 18s - loss: -2.9287e+00 - mse: 0.0072 - mae: 0.0635 - val_loss: -2.9547e+00 - val_mse: 0.0071 - val_mae: 0.0628 - 18s/epoch - 34ms/step
+Epoch 21/100
+525/525 - 16s - loss: -2.9442e+00 - mse: 0.0073 - mae: 0.0637 - val_loss: -2.9448e+00 - val_mse: 0.0066 - val_mae: 0.0601 - 16s/epoch - 30ms/step
+Epoch 22/100
+525/525 - 18s - loss: -2.9557e+00 - mse: 0.0071 - mae: 0.0630 - val_loss: -2.9486e+00 - val_mse: 0.0061 - val_mae: 0.0579 - 18s/epoch - 34ms/step
+Epoch 23/100
+New best validation loss:  -2.989640712738037
+525/525 - 16s - loss: -2.9684e+00 - mse: 0.0071 - mae: 0.0629 - val_loss: -2.9896e+00 - val_mse: 0.0064 - val_mae: 0.0592 - 16s/epoch - 30ms/step
+Epoch 24/100
+New best validation loss:  -2.99928879737854
+525/525 - 18s - loss: -2.9705e+00 - mse: 0.0071 - mae: 0.0629 - val_loss: -2.9993e+00 - val_mse: 0.0072 - val_mae: 0.0637 - 18s/epoch - 34ms/step
+Epoch 25/100
+New best validation loss:  -3.004800319671631
+525/525 - 16s - loss: -2.9861e+00 - mse: 0.0071 - mae: 0.0625 - val_loss: -3.0048e+00 - val_mse: 0.0072 - val_mae: 0.0633 - 16s/epoch - 31ms/step
+Epoch 26/100
+New best validation loss:  -3.0195305347442627
+525/525 - 18s - loss: -2.9690e+00 - mse: 0.0071 - mae: 0.0630 - val_loss: -3.0195e+00 - val_mse: 0.0065 - val_mae: 0.0595 - 18s/epoch - 35ms/step
+Epoch 27/100
+New best validation loss:  -3.0349817276000977
+525/525 - 15s - loss: -3.0063e+00 - mse: 0.0070 - mae: 0.0620 - val_loss: -3.0350e+00 - val_mse: 0.0066 - val_mae: 0.0601 - 15s/epoch - 29ms/step
+Epoch 28/100
+New best validation loss:  -3.050182580947876
+525/525 - 18s - loss: -3.0052e+00 - mse: 0.0070 - mae: 0.0622 - val_loss: -3.0502e+00 - val_mse: 0.0070 - val_mae: 0.0620 - 18s/epoch - 34ms/step
+Epoch 29/100
+525/525 - 16s - loss: -3.0175e+00 - mse: 0.0069 - mae: 0.0618 - val_loss: -3.0230e+00 - val_mse: 0.0067 - val_mae: 0.0606 - 16s/epoch - 30ms/step
+Epoch 30/100
+525/525 - 18s - loss: -3.0137e+00 - mse: 0.0070 - mae: 0.0622 - val_loss: -3.0359e+00 - val_mse: 0.0065 - val_mae: 0.0594 - 18s/epoch - 34ms/step
+Epoch 31/100
+525/525 - 15s - loss: -2.9954e+00 - mse: 0.0070 - mae: 0.0622 - val_loss: -2.8952e+00 - val_mse: 0.0073 - val_mae: 0.0649 - 15s/epoch - 30ms/step
+Epoch 32/100
+525/525 - 18s - loss: -3.0232e+00 - mse: 0.0069 - mae: 0.0617 - val_loss: -3.0463e+00 - val_mse: 0.0063 - val_mae: 0.0588 - 18s/epoch - 35ms/step
+Epoch 33/100
+525/525 - 16s - loss: -3.0140e+00 - mse: 0.0069 - mae: 0.0619 - val_loss: -3.0334e+00 - val_mse: 0.0074 - val_mae: 0.0647 - 16s/epoch - 30ms/step
+Epoch 34/100
+525/525 - 18s - loss: -2.9826e+00 - mse: 0.0070 - mae: 0.0625 - val_loss: -3.0433e+00 - val_mse: 0.0070 - val_mae: 0.0618 - 18s/epoch - 35ms/step
+Epoch 35/100
+525/525 - 18s - loss: -3.0360e+00 - mse: 0.0069 - mae: 0.0614 - val_loss: -3.0101e+00 - val_mse: 0.0067 - val_mae: 0.0607 - 18s/epoch - 35ms/step
+Epoch 36/100
+New best validation loss:  -3.0577750205993652
+525/525 - 16s - loss: -2.9789e+00 - mse: 0.0070 - mae: 0.0625 - val_loss: -3.0578e+00 - val_mse: 0.0067 - val_mae: 0.0603 - 16s/epoch - 30ms/step
+Epoch 37/100
+525/525 - 18s - loss: -3.0218e+00 - mse: 0.0070 - mae: 0.0621 - val_loss: -2.8105e+00 - val_mse: 0.0088 - val_mae: 0.0726 - 18s/epoch - 35ms/step
+Epoch 38/100
+525/525 - 15s - loss: -3.0023e+00 - mse: 0.0069 - mae: 0.0620 - val_loss: -3.0486e+00 - val_mse: 0.0067 - val_mae: 0.0599 - 15s/epoch - 29ms/step
+Epoch 39/100
+New best validation loss:  -3.0707216262817383
+525/525 - 18s - loss: -3.0494e+00 - mse: 0.0069 - mae: 0.0614 - val_loss: -3.0707e+00 - val_mse: 0.0071 - val_mae: 0.0624 - 18s/epoch - 34ms/step
+Epoch 40/100
+525/525 - 15s - loss: -2.9950e+00 - mse: 0.0069 - mae: 0.0620 - val_loss: -3.0179e+00 - val_mse: 0.0066 - val_mae: 0.0594 - 15s/epoch - 29ms/step
+Epoch 41/100
+New best validation loss:  -3.077768087387085
+525/525 - 18s - loss: -3.0524e+00 - mse: 0.0069 - mae: 0.0612 - val_loss: -3.0778e+00 - val_mse: 0.0064 - val_mae: 0.0588 - 18s/epoch - 33ms/step
+Epoch 42/100
+525/525 - 15s - loss: -3.0454e+00 - mse: 0.0069 - mae: 0.0613 - val_loss: -3.0309e+00 - val_mse: 0.0070 - val_mae: 0.0622 - 15s/epoch - 29ms/step
+Epoch 43/100
+New best validation loss:  -3.084584951400757
+525/525 - 18s - loss: -3.0350e+00 - mse: 0.0069 - mae: 0.0615 - val_loss: -3.0846e+00 - val_mse: 0.0067 - val_mae: 0.0607 - 18s/epoch - 34ms/step
+Epoch 44/100
+525/525 - 14s - loss: -3.0452e+00 - mse: 0.0069 - mae: 0.0612 - val_loss: -3.0486e+00 - val_mse: 0.0062 - val_mae: 0.0581 - 14s/epoch - 27ms/step
+Epoch 45/100
+525/525 - 17s - loss: -3.0639e+00 - mse: 0.0068 - mae: 0.0609 - val_loss: -2.9776e+00 - val_mse: 0.0064 - val_mae: 0.0590 - 17s/epoch - 33ms/step
+Epoch 46/100
+New best validation loss:  -3.0895230770111084
+525/525 - 15s - loss: -3.0615e+00 - mse: 0.0068 - mae: 0.0609 - val_loss: -3.0895e+00 - val_mse: 0.0068 - val_mae: 0.0610 - 15s/epoch - 28ms/step
+Epoch 47/100
+525/525 - 18s - loss: -3.0496e+00 - mse: 0.0069 - mae: 0.0614 - val_loss: -2.9094e+00 - val_mse: 0.0072 - val_mae: 0.0645 - 18s/epoch - 34ms/step
+Epoch 48/100
+525/525 - 15s - loss: -3.0417e+00 - mse: 0.0067 - mae: 0.0608 - val_loss: -3.0887e+00 - val_mse: 0.0067 - val_mae: 0.0607 - 15s/epoch - 28ms/step
+Epoch 49/100
+525/525 - 17s - loss: -3.0713e+00 - mse: 0.0068 - mae: 0.0607 - val_loss: -3.0794e+00 - val_mse: 0.0070 - val_mae: 0.0617 - 17s/epoch - 32ms/step
+Epoch 50/100
+525/525 - 15s - loss: -3.0734e+00 - mse: 0.0068 - mae: 0.0607 - val_loss: -3.0861e+00 - val_mse: 0.0072 - val_mae: 0.0628 - 15s/epoch - 29ms/step
+Epoch 51/100
+New best validation loss:  -3.0975353717803955
+525/525 - 18s - loss: -3.0699e+00 - mse: 0.0068 - mae: 0.0608 - val_loss: -3.0975e+00 - val_mse: 0.0065 - val_mae: 0.0591 - 18s/epoch - 34ms/step
+Epoch 52/100
+525/525 - 15s - loss: -3.0519e+00 - mse: 0.0068 - mae: 0.0611 - val_loss: -3.0713e+00 - val_mse: 0.0065 - val_mae: 0.0593 - 15s/epoch - 28ms/step
+Epoch 53/100
+New best validation loss:  -3.1092803478240967
+525/525 - 18s - loss: -3.0755e+00 - mse: 0.0068 - mae: 0.0608 - val_loss: -3.1093e+00 - val_mse: 0.0067 - val_mae: 0.0602 - 18s/epoch - 33ms/step
+Epoch 54/100
+525/525 - 15s - loss: -2.8936e+00 - mse: 0.0071 - mae: 0.0639 - val_loss: -2.9874e+00 - val_mse: 0.0068 - val_mae: 0.0619 - 15s/epoch - 29ms/step
+Epoch 55/100
+525/525 - 17s - loss: -3.0218e+00 - mse: 0.0069 - mae: 0.0615 - val_loss: -3.0586e+00 - val_mse: 0.0067 - val_mae: 0.0602 - 17s/epoch - 33ms/step
+Epoch 56/100
+525/525 - 15s - loss: -3.0611e+00 - mse: 0.0070 - mae: 0.0611 - val_loss: -3.0824e+00 - val_mse: 0.0069 - val_mae: 0.0607 - 15s/epoch - 28ms/step
+Epoch 57/100
+525/525 - 17s - loss: -3.0788e+00 - mse: 0.0068 - mae: 0.0608 - val_loss: -3.0791e+00 - val_mse: 0.0065 - val_mae: 0.0586 - 17s/epoch - 33ms/step
+Epoch 58/100
+525/525 - 15s - loss: -3.0797e+00 - mse: 0.0068 - mae: 0.0608 - val_loss: -3.0811e+00 - val_mse: 0.0070 - val_mae: 0.0618 - 15s/epoch - 28ms/step
+Epoch 59/100
+525/525 - 17s - loss: -3.0833e+00 - mse: 0.0068 - mae: 0.0607 - val_loss: -3.1021e+00 - val_mse: 0.0070 - val_mae: 0.0616 - 17s/epoch - 32ms/step
+Epoch 60/100
+525/525 - 15s - loss: -3.0787e+00 - mse: 0.0068 - mae: 0.0608 - val_loss: -3.0989e+00 - val_mse: 0.0065 - val_mae: 0.0592 - 15s/epoch - 29ms/step
+Epoch 61/100
+525/525 - 18s - loss: -3.0793e+00 - mse: 0.0068 - mae: 0.0606 - val_loss: -3.0961e+00 - val_mse: 0.0068 - val_mae: 0.0608 - 18s/epoch - 33ms/step
+Epoch 62/100
+525/525 - 15s - loss: -2.9563e+00 - mse: 0.0070 - mae: 0.0628 - val_loss: -3.0464e+00 - val_mse: 0.0070 - val_mae: 0.0623 - 15s/epoch - 28ms/step
+Epoch 63/100
+525/525 - 17s - loss: -3.0800e+00 - mse: 0.0069 - mae: 0.0608 - val_loss: -3.1025e+00 - val_mse: 0.0068 - val_mae: 0.0606 - 17s/epoch - 33ms/step
+Epoch 64/100
+525/525 - 15s - loss: -3.0878e+00 - mse: 0.0068 - mae: 0.0604 - val_loss: -3.0181e+00 - val_mse: 0.0077 - val_mae: 0.0655 - 15s/epoch - 28ms/step
+Epoch 65/100
+525/525 - 18s - loss: -3.0891e+00 - mse: 0.0068 - mae: 0.0606 - val_loss: -3.0616e+00 - val_mse: 0.0065 - val_mae: 0.0591 - 18s/epoch - 34ms/step
+Epoch 66/100
+525/525 - 15s - loss: -3.0591e+00 - mse: 0.0068 - mae: 0.0610 - val_loss: -3.1054e+00 - val_mse: 0.0069 - val_mae: 0.0614 - 15s/epoch - 28ms/step
+Epoch 67/100
+525/525 - 18s - loss: -3.0948e+00 - mse: 0.0067 - mae: 0.0604 - val_loss: -3.1059e+00 - val_mse: 0.0067 - val_mae: 0.0599 - 18s/epoch - 34ms/step
+Epoch 68/100
+New best validation loss:  -3.113935708999634
+525/525 - 15s - loss: -3.0895e+00 - mse: 0.0068 - mae: 0.0606 - val_loss: -3.1139e+00 - val_mse: 0.0065 - val_mae: 0.0592 - 15s/epoch - 29ms/step
+Epoch 69/100
+525/525 - 17s - loss: -3.0889e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.1010e+00 - val_mse: 0.0072 - val_mae: 0.0625 - 17s/epoch - 33ms/step
+Epoch 70/100
+525/525 - 15s - loss: -3.0858e+00 - mse: 0.0068 - mae: 0.0606 - val_loss: -3.1095e+00 - val_mse: 0.0067 - val_mae: 0.0603 - 15s/epoch - 28ms/step
+Epoch 71/100
+525/525 - 17s - loss: -3.0954e+00 - mse: 0.0068 - mae: 0.0603 - val_loss: -3.0989e+00 - val_mse: 0.0066 - val_mae: 0.0598 - 17s/epoch - 33ms/step
+Epoch 72/100
+525/525 - 15s - loss: -3.0943e+00 - mse: 0.0067 - mae: 0.0603 - val_loss: -3.1051e+00 - val_mse: 0.0067 - val_mae: 0.0606 - 15s/epoch - 29ms/step
+Epoch 73/100
+525/525 - 17s - loss: -3.0977e+00 - mse: 0.0068 - mae: 0.0604 - val_loss: -3.0987e+00 - val_mse: 0.0068 - val_mae: 0.0609 - 17s/epoch - 33ms/step
+Epoch 74/100
+525/525 - 15s - loss: -3.1001e+00 - mse: 0.0067 - mae: 0.0601 - val_loss: -3.0961e+00 - val_mse: 0.0069 - val_mae: 0.0607 - 15s/epoch - 28ms/step
+Epoch 75/100
+New best validation loss:  -3.1215150356292725
+525/525 - 18s - loss: -3.1013e+00 - mse: 0.0067 - mae: 0.0601 - val_loss: -3.1215e+00 - val_mse: 0.0066 - val_mae: 0.0596 - 18s/epoch - 34ms/step
+Epoch 76/100
+525/525 - 15s - loss: -3.0981e+00 - mse: 0.0067 - mae: 0.0603 - val_loss: -3.0993e+00 - val_mse: 0.0069 - val_mae: 0.0614 - 15s/epoch - 29ms/step
+Epoch 77/100
+525/525 - 18s - loss: -3.0943e+00 - mse: 0.0068 - mae: 0.0606 - val_loss: -3.1100e+00 - val_mse: 0.0066 - val_mae: 0.0598 - 18s/epoch - 34ms/step
+Epoch 78/100
+525/525 - 15s - loss: -3.1015e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.0931e+00 - val_mse: 0.0065 - val_mae: 0.0592 - 15s/epoch - 29ms/step
+Epoch 79/100
+525/525 - 18s - loss: -3.1013e+00 - mse: 0.0067 - mae: 0.0603 - val_loss: -3.0996e+00 - val_mse: 0.0062 - val_mae: 0.0580 - 18s/epoch - 35ms/step
+Epoch 80/100
+525/525 - 16s - loss: -3.1020e+00 - mse: 0.0067 - mae: 0.0603 - val_loss: -3.0582e+00 - val_mse: 0.0068 - val_mae: 0.0607 - 16s/epoch - 31ms/step
+Epoch 81/100
+New best validation loss:  -3.1242308616638184
+525/525 - 18s - loss: -3.0987e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.1242e+00 - val_mse: 0.0065 - val_mae: 0.0590 - 18s/epoch - 33ms/step
+Epoch 82/100
+525/525 - 16s - loss: -3.1083e+00 - mse: 0.0066 - mae: 0.0598 - val_loss: -3.1219e+00 - val_mse: 0.0067 - val_mae: 0.0601 - 16s/epoch - 31ms/step
+Epoch 83/100
+525/525 - 18s - loss: -3.1078e+00 - mse: 0.0067 - mae: 0.0599 - val_loss: -3.1194e+00 - val_mse: 0.0069 - val_mae: 0.0606 - 18s/epoch - 34ms/step
+Epoch 84/100
+525/525 - 17s - loss: -3.1097e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.1204e+00 - val_mse: 0.0066 - val_mae: 0.0594 - 17s/epoch - 32ms/step
+Epoch 85/100
+New best validation loss:  -3.1252200603485107
+525/525 - 20s - loss: -3.1082e+00 - mse: 0.0066 - mae: 0.0597 - val_loss: -3.1252e+00 - val_mse: 0.0066 - val_mae: 0.0597 - 20s/epoch - 37ms/step
+Epoch 86/100
+525/525 - 19s - loss: -3.1091e+00 - mse: 0.0067 - mae: 0.0599 - val_loss: -3.1199e+00 - val_mse: 0.0065 - val_mae: 0.0587 - 19s/epoch - 36ms/step
+Epoch 87/100
+New best validation loss:  -3.130300998687744
+525/525 - 16s - loss: -3.0876e+00 - mse: 0.0067 - mae: 0.0603 - val_loss: -3.1303e+00 - val_mse: 0.0067 - val_mae: 0.0601 - 16s/epoch - 31ms/step
+Epoch 88/100
+525/525 - 19s - loss: -3.1094e+00 - mse: 0.0067 - mae: 0.0600 - val_loss: -3.0664e+00 - val_mse: 0.0076 - val_mae: 0.0646 - 19s/epoch - 36ms/step
+Epoch 89/100
+525/525 - 15s - loss: -3.1103e+00 - mse: 0.0067 - mae: 0.0601 - val_loss: -3.1167e+00 - val_mse: 0.0071 - val_mae: 0.0618 - 15s/epoch - 29ms/step
+Epoch 90/100
+525/525 - 18s - loss: -3.0978e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.1264e+00 - val_mse: 0.0066 - val_mae: 0.0597 - 18s/epoch - 34ms/step
+Epoch 91/100
+525/525 - 17s - loss: -3.1158e+00 - mse: 0.0067 - mae: 0.0599 - val_loss: -3.0475e+00 - val_mse: 0.0074 - val_mae: 0.0635 - 17s/epoch - 32ms/step
+Epoch 92/100
+New best validation loss:  -3.1312267780303955
+525/525 - 20s - loss: -3.0894e+00 - mse: 0.0068 - mae: 0.0604 - val_loss: -3.1312e+00 - val_mse: 0.0067 - val_mae: 0.0597 - 20s/epoch - 38ms/step
+Epoch 93/100
+525/525 - 15s - loss: -3.1074e+00 - mse: 0.0067 - mae: 0.0600 - val_loss: -3.1292e+00 - val_mse: 0.0065 - val_mae: 0.0593 - 15s/epoch - 29ms/step
+Epoch 94/100
+525/525 - 20s - loss: -3.1161e+00 - mse: 0.0066 - mae: 0.0598 - val_loss: -3.1310e+00 - val_mse: 0.0065 - val_mae: 0.0590 - 20s/epoch - 37ms/step
+Epoch 95/100
+525/525 - 16s - loss: -3.1102e+00 - mse: 0.0067 - mae: 0.0602 - val_loss: -3.1243e+00 - val_mse: 0.0064 - val_mae: 0.0587 - 16s/epoch - 31ms/step
+Epoch 96/100
+525/525 - 19s - loss: -3.1141e+00 - mse: 0.0066 - mae: 0.0599 - val_loss: -2.9464e+00 - val_mse: 0.0085 - val_mae: 0.0699 - 19s/epoch - 35ms/step
+Epoch 97/100
+525/525 - 18s - loss: -3.1093e+00 - mse: 0.0067 - mae: 0.0601 - val_loss: -3.1187e+00 - val_mse: 0.0068 - val_mae: 0.0602 - 18s/epoch - 35ms/step
+Epoch 98/100
+525/525 - 15s - loss: -3.1179e+00 - mse: 0.0066 - mae: 0.0597 - val_loss: -3.1165e+00 - val_mse: 0.0064 - val_mae: 0.0585 - 15s/epoch - 29ms/step
+Epoch 99/100
+525/525 - 18s - loss: -3.1145e+00 - mse: 0.0066 - mae: 0.0597 - val_loss: -3.1232e+00 - val_mse: 0.0063 - val_mae: 0.0580 - 18s/epoch - 34ms/step
+Epoch 100/100
+525/525 - 15s - loss: -3.1172e+00 - mse: 0.0066 - mae: 0.0598 - val_loss: -3.1305e+00 - val_mse: 0.0067 - val_mae: 0.0602 - 15s/epoch - 29ms/step
+Model save id  0000
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 100, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 1 WIN: 288
+Epoch 1/100
