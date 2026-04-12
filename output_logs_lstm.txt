@@ -1,0 +1,1398 @@
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 200, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 2 WIN: 288
+Epoch 1/200
+New best validation loss:  0.004292311146855354
+525/525 - 20s - 38ms/step - loss: 0.0136 - mae: 0.0707 - mse: 0.0136 - val_loss: 0.0043 - val_mae: 0.0463 - val_mse: 0.0043
+Epoch 2/200
+New best validation loss:  0.003984049428254366
+525/525 - 14s - 28ms/step - loss: 0.0041 - mae: 0.0453 - mse: 0.0041 - val_loss: 0.0040 - val_mae: 0.0450 - val_mse: 0.0040
+Epoch 3/200
+New best validation loss:  0.0036406402941793203
+525/525 - 15s - 28ms/step - loss: 0.0038 - mae: 0.0434 - mse: 0.0038 - val_loss: 0.0036 - val_mae: 0.0424 - val_mse: 0.0036
+Epoch 4/200
+New best validation loss:  0.0036156154237687588
+525/525 - 19s - 36ms/step - loss: 0.0037 - mae: 0.0426 - mse: 0.0037 - val_loss: 0.0036 - val_mae: 0.0421 - val_mse: 0.0036
+Epoch 5/200
+525/525 - 18s - 35ms/step - loss: 0.0036 - mae: 0.0424 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0425 - val_mse: 0.0036
+Epoch 6/200
+New best validation loss:  0.003550067078322172
+525/525 - 15s - 28ms/step - loss: 0.0036 - mae: 0.0422 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0415 - val_mse: 0.0036
+Epoch 7/200
+525/525 - 14s - 27ms/step - loss: 0.0036 - mae: 0.0422 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0418 - val_mse: 0.0036
+Epoch 8/200
+525/525 - 19s - 35ms/step - loss: 0.0036 - mae: 0.0420 - mse: 0.0036 - val_loss: 0.0037 - val_mae: 0.0433 - val_mse: 0.0037
+Epoch 9/200
+New best validation loss:  0.0035415377933532
+525/525 - 15s - 29ms/step - loss: 0.0036 - mae: 0.0424 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0412 - val_mse: 0.0035
+Epoch 10/200
+525/525 - 18s - 35ms/step - loss: 0.0036 - mae: 0.0420 - mse: 0.0036 - val_loss: 0.0037 - val_mae: 0.0431 - val_mse: 0.0037
+Epoch 11/200
+525/525 - 14s - 27ms/step - loss: 0.0036 - mae: 0.0419 - mse: 0.0036 - val_loss: 0.0042 - val_mae: 0.0476 - val_mse: 0.0042
+Epoch 12/200
+New best validation loss:  0.00350928190164268
+525/525 - 18s - 34ms/step - loss: 0.0036 - mae: 0.0419 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0414 - val_mse: 0.0035
+Epoch 13/200
+New best validation loss:  0.0034834204707294703
+525/525 - 14s - 27ms/step - loss: 0.0036 - mae: 0.0419 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0411 - val_mse: 0.0035
+Epoch 14/200
+525/525 - 18s - 34ms/step - loss: 0.0036 - mae: 0.0418 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0409 - val_mse: 0.0035
+Epoch 15/200
+New best validation loss:  0.0034614771138876677
+525/525 - 15s - 28ms/step - loss: 0.0035 - mae: 0.0416 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 16/200
+525/525 - 18s - 34ms/step - loss: 0.0035 - mae: 0.0415 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0415 - val_mse: 0.0035
+Epoch 17/200
+525/525 - 15s - 28ms/step - loss: 0.0035 - mae: 0.0415 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 18/200
+525/525 - 18s - 34ms/step - loss: 0.0035 - mae: 0.0415 - mse: 0.0035 - val_loss: 0.0036 - val_mae: 0.0417 - val_mse: 0.0036
+Epoch 19/200
+525/525 - 14s - 27ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0413 - val_mse: 0.0035
+Epoch 20/200
+525/525 - 17s - 33ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0411 - val_mse: 0.0035
+Epoch 21/200
+New best validation loss:  0.003436601022258401
+525/525 - 14s - 27ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 22/200
+525/525 - 18s - 34ms/step - loss: 0.0035 - mae: 0.0412 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0418 - val_mse: 0.0035
+Epoch 23/200
+525/525 - 14s - 27ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0417 - val_mse: 0.0035
+Epoch 24/200
+525/525 - 18s - 33ms/step - loss: 0.0035 - mae: 0.0412 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0409 - val_mse: 0.0035
+Epoch 25/200
+525/525 - 14s - 28ms/step - loss: 0.0035 - mae: 0.0411 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0413 - val_mse: 0.0034
+Epoch 26/200
+525/525 - 17s - 32ms/step - loss: 0.0035 - mae: 0.0412 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0412 - val_mse: 0.0034
+Epoch 27/200
+525/525 - 15s - 28ms/step - loss: 0.0035 - mae: 0.0411 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0414 - val_mse: 0.0035
+Epoch 28/200
+525/525 - 18s - 34ms/step - loss: 0.0035 - mae: 0.0411 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0413 - val_mse: 0.0035
+Epoch 29/200
+New best validation loss:  0.00341603672131896
+525/525 - 15s - 28ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 30/200
+525/525 - 17s - 33ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0413 - val_mse: 0.0035
+Epoch 31/200
+525/525 - 14s - 27ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0408 - val_mse: 0.0035
+Epoch 32/200
+New best validation loss:  0.003415734739974141
+525/525 - 15s - 28ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 33/200
+525/525 - 16s - 30ms/step - loss: 0.0034 - mae: 0.0408 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 34/200
+525/525 - 14s - 27ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0413 - val_mse: 0.0035
+Epoch 35/200
+New best validation loss:  0.0033836939837783575
+525/525 - 18s - 34ms/step - loss: 0.0034 - mae: 0.0408 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0403 - val_mse: 0.0034
+Epoch 36/200
+525/525 - 15s - 28ms/step - loss: 0.0034 - mae: 0.0408 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0416 - val_mse: 0.0035
+Epoch 37/200
+525/525 - 18s - 34ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 38/200
+525/525 - 14s - 27ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0422 - val_mse: 0.0035
+Epoch 39/200
+525/525 - 18s - 34ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 40/200
+New best validation loss:  0.0033488369081169367
+525/525 - 14s - 26ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 41/200
+525/525 - 17s - 32ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0402 - val_mse: 0.0034
+Epoch 42/200
+525/525 - 14s - 27ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0402 - val_mse: 0.0034
+Epoch 43/200
+New best validation loss:  0.0033409064635634422
+525/525 - 17s - 33ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 44/200
+525/525 - 15s - 28ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0403 - val_mse: 0.0034
+Epoch 45/200
+525/525 - 18s - 33ms/step - loss: 0.0034 - mae: 0.0405 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 46/200
+New best validation loss:  0.003319014562293887
+525/525 - 15s - 28ms/step - loss: 0.0033 - mae: 0.0404 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 47/200
+525/525 - 17s - 33ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 48/200
+New best validation loss:  0.0033155628480017185
+525/525 - 14s - 27ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 49/200
+525/525 - 17s - 33ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0402 - val_mse: 0.0034
+Epoch 50/200
+525/525 - 14s - 27ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 51/200
+New best validation loss:  0.003289327025413513
+525/525 - 18s - 33ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 52/200
+525/525 - 14s - 28ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 53/200
+525/525 - 14s - 27ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0403 - val_mse: 0.0034
+Epoch 54/200
+525/525 - 18s - 34ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 55/200
+525/525 - 15s - 28ms/step - loss: 0.0033 - mae: 0.0404 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 56/200
+525/525 - 17s - 32ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0404 - val_mse: 0.0034
+Epoch 57/200
+525/525 - 14s - 27ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 58/200
+525/525 - 17s - 32ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0035 - val_mae: 0.0415 - val_mse: 0.0035
+Epoch 59/200
+New best validation loss:  0.003285024082288146
+525/525 - 14s - 28ms/step - loss: 0.0033 - mae: 0.0400 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 60/200
+525/525 - 17s - 33ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 61/200
+525/525 - 14s - 27ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 62/200
+New best validation loss:  0.003270743414759636
+525/525 - 18s - 33ms/step - loss: 0.0033 - mae: 0.0400 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0397 - val_mse: 0.0033
+Epoch 63/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 64/200
+525/525 - 17s - 33ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 65/200
+525/525 - 14s - 27ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 66/200
+525/525 - 19s - 35ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0397 - val_mse: 0.0033
+Epoch 67/200
+525/525 - 14s - 27ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 68/200
+525/525 - 17s - 32ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 69/200
+525/525 - 14s - 26ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 70/200
+525/525 - 17s - 33ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0034 - val_mae: 0.0417 - val_mse: 0.0034
+Epoch 71/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 72/200
+525/525 - 19s - 37ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0397 - val_mse: 0.0033
+Epoch 73/200
+525/525 - 16s - 30ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 74/200
+New best validation loss:  0.0032688232604414225
+525/525 - 21s - 39ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 75/200
+New best validation loss:  0.003250191221013665
+525/525 - 15s - 29ms/step - loss: 0.0032 - mae: 0.0397 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0397 - val_mse: 0.0033
+Epoch 76/200
+525/525 - 19s - 36ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 77/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 78/200
+525/525 - 17s - 33ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 79/200
+525/525 - 14s - 27ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 80/200
+525/525 - 17s - 33ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 81/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 82/200
+New best validation loss:  0.003235175274312496
+525/525 - 19s - 37ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 83/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 84/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 85/200
+New best validation loss:  0.0032296041026711464
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 86/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 87/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0413 - val_mse: 0.0034
+Epoch 88/200
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 89/200
+New best validation loss:  0.003228137269616127
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 90/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 91/200
+525/525 - 16s - 30ms/step - loss: 0.0031 - mae: 0.0393 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0410 - val_mse: 0.0033
+Epoch 92/200
+525/525 - 19s - 36ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 93/200
+New best validation loss:  0.0032195316161960363
+525/525 - 17s - 32ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 94/200
+New best validation loss:  0.003213462419807911
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0393 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 95/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0393 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 96/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 97/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0396 - val_mse: 0.0033
+Epoch 98/200
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0398 - val_mse: 0.0033
+Epoch 99/200
+525/525 - 14s - 28ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 100/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0416 - val_mse: 0.0034
+Epoch 101/200
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 102/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 103/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 104/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 105/200
+New best validation loss:  0.003186088288202882
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0391 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 106/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0391 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 107/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0391 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 108/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0391 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0413 - val_mse: 0.0034
+Epoch 109/200
+525/525 - 21s - 40ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 110/200
+525/525 - 22s - 42ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 111/200
+525/525 - 17s - 32ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 112/200
+New best validation loss:  0.003166974987834692
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0392 - val_mse: 0.0032
+Epoch 113/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 114/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0391 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 115/200
+525/525 - 17s - 31ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0393 - val_mse: 0.0032
+Epoch 116/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 117/200
+New best validation loss:  0.003157310886308551
+525/525 - 17s - 32ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0392 - val_mse: 0.0032
+Epoch 118/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 119/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 120/200
+525/525 - 19s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0394 - val_mse: 0.0032
+Epoch 121/200
+525/525 - 16s - 31ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 122/200
+New best validation loss:  0.0031374015379697084
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 123/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 124/200
+525/525 - 18s - 34ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 125/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 126/200
+525/525 - 21s - 39ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 127/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 128/200
+525/525 - 19s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 129/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0394 - val_mse: 0.0032
+Epoch 130/200
+525/525 - 18s - 34ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 131/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 132/200
+525/525 - 20s - 37ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 133/200
+525/525 - 20s - 38ms/step - loss: 0.0030 - mae: 0.0386 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 134/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0386 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 135/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0386 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0393 - val_mse: 0.0032
+Epoch 136/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 137/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 138/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0033 - val_mae: 0.0409 - val_mse: 0.0033
+Epoch 139/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 140/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 141/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 142/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0393 - val_mse: 0.0032
+Epoch 143/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0402 - val_mse: 0.0032
+Epoch 144/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 145/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 146/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 147/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0403 - val_mse: 0.0032
+Epoch 148/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 149/200
+525/525 - 20s - 38ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 150/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 151/200
+New best validation loss:  0.0031351640354841948
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0394 - val_mse: 0.0031
+Epoch 152/200
+New best validation loss:  0.0031022662296891212
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 153/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 154/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0402 - val_mse: 0.0032
+Epoch 155/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 156/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 157/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 158/200
+525/525 - 14s - 26ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 159/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 160/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 161/200
+525/525 - 19s - 37ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 162/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 163/200
+525/525 - 19s - 35ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 164/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 165/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 166/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0380 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 167/200
+New best validation loss:  0.0030922344885766506
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0390 - val_mse: 0.0031
+Epoch 168/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0394 - val_mse: 0.0031
+Epoch 169/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 170/200
+525/525 - 16s - 31ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 171/200
+525/525 - 19s - 37ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 172/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0394 - val_mse: 0.0031
+Epoch 173/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0380 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 174/200
+525/525 - 16s - 30ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 175/200
+525/525 - 19s - 36ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 176/200
+525/525 - 19s - 36ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 177/200
+525/525 - 15s - 30ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 178/200
+525/525 - 18s - 34ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 179/200
+525/525 - 17s - 33ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 180/200
+525/525 - 19s - 36ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 181/200
+525/525 - 16s - 31ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 182/200
+525/525 - 20s - 38ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 183/200
+525/525 - 16s - 30ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 184/200
+525/525 - 20s - 38ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 185/200
+New best validation loss:  0.0030910875648260117
+525/525 - 17s - 31ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0389 - val_mse: 0.0031
+Epoch 186/200
+New best validation loss:  0.0030715172179043293
+525/525 - 20s - 37ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0388 - val_mse: 0.0031
+Epoch 187/200
+525/525 - 17s - 32ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 188/200
+525/525 - 19s - 37ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 189/200
+New best validation loss:  0.0030649369582533836
+525/525 - 20s - 38ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0388 - val_mse: 0.0031
+Epoch 190/200
+525/525 - 16s - 31ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 191/200
+525/525 - 19s - 37ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0399 - val_mse: 0.0031
+Epoch 192/200
+New best validation loss:  0.0030617229640483856
+525/525 - 17s - 32ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0387 - val_mse: 0.0031
+Epoch 193/200
+525/525 - 19s - 36ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0391 - val_mse: 0.0031
+Epoch 194/200
+525/525 - 16s - 30ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0394 - val_mse: 0.0031
+Epoch 195/200
+525/525 - 19s - 36ms/step - loss: 0.0028 - mae: 0.0377 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0388 - val_mse: 0.0031
+Epoch 196/200
+525/525 - 17s - 32ms/step - loss: 0.0028 - mae: 0.0377 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 197/200
+525/525 - 20s - 37ms/step - loss: 0.0028 - mae: 0.0377 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0394 - val_mse: 0.0031
+Epoch 198/200
+525/525 - 15s - 29ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 199/200
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 200/200
+525/525 - 15s - 29ms/step - loss: 0.0028 - mae: 0.0377 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Model save id  0000
+
+[1m  1/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m1:51[0m 204ms/step
+[1m  5/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step   
+[1m  8/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 15ms/step
+[1m 12/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m 16/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m 20/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m 24/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m 29/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m 34/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 14ms/step
+[1m 38/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 42/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 47/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 53/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 58/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 62/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 67/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m 72/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m 78/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m 82/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m 87/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m 91/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m 96/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m101/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m106/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m111/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m115/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m120/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m125/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m130/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m135/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m139/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m144/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m149/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m154/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m159/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m164/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m169/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m174/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m179/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m184/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m189/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m194/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m200/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m205/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m210/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m214/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m220/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m225/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m230/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m235/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m240/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m246/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m251/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m256/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m261/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m267/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m272/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m278/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m282/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m286/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m291/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m295/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m299/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 12ms/step
+[1m305/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m310/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m315/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m320/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m324/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m329/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m333/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m337/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 12ms/step
+[1m342/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m346/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 12ms/step
+[1m352/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m357/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m362/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m367/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m372/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m377/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 11ms/step
+[1m382/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 11ms/step
+[1m387/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m393/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m399/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m405/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m411/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m412/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 14ms/step
+[1m418/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 14ms/step
+[1m424/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 14ms/step
+[1m425/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m2s[0m 19ms/step
+[1m431/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m2s[0m 19ms/step
+[1m437/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m2s[0m 19ms/step
+[1m442/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 19ms/step
+[1m448/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 19ms/step
+[1m454/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 19ms/step
+[1m460/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 18ms/step
+[1m465/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 18ms/step
+[1m470/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 18ms/step
+[1m475/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 18ms/step
+[1m481/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 18ms/step
+[1m487/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 18ms/step
+[1m493/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 18ms/step
+[1m499/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 18ms/step
+[1m505/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 18ms/step
+[1m509/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 18ms/step
+[1m514/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 18ms/step
+[1m519/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 18ms/step
+[1m523/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 17ms/step
+[1m528/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 17ms/step
+[1m532/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 17ms/step
+[1m537/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 17ms/step
+[1m542/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 17ms/step
+[1m548/548[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step
+[1m548/548[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m10s[0m 17ms/step
+
+[1m  1/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m15s[0m 24ms/step
+[1m  5/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step 
+[1m  9/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 13/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 17/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 22/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 26/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 30/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 35/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 40/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 44/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 48/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 51/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 55/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 58/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 63/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 68/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 72/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 77/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 82/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 88/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 94/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m100/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m105/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m110/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m115/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m120/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m125/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m130/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m134/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m140/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m145/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m151/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 12ms/step
+[1m156/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m162/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m168/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m173/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m178/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m183/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m188/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m193/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m199/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m205/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m211/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m216/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m222/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m228/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m234/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m240/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m246/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m251/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m256/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m260/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m265/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m271/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m276/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m280/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m285/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m290/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m295/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m299/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m4s[0m 11ms/step
+[1m305/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m310/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m315/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m320/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m324/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m328/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m333/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m337/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m342/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m347/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m353/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m358/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m363/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m368/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m373/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m378/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m383/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m388/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m392/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m397/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m402/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m407/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m412/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m417/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m422/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m427/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m433/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m439/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m445/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m450/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m455/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m460/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m465/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m471/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m477/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m482/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m488/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m493/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m498/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m503/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m507/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m513/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m519/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m523/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m529/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m535/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m541/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m547/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m553/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m559/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 11ms/step
+[1m565/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 11ms/step
+[1m570/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 11ms/step
+[1m575/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 11ms/step
+[1m580/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 11ms/step
+[1m584/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 11ms/step
+[1m589/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 11ms/step
+[1m594/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m600/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m605/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m610/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m616/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m622/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 11ms/step
+[1m627/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m633/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m639/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m644/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m650/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m655/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 11ms/step
+[1m657/657[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 11ms/step
+FILES: preprocessed/gc19_a.csv-preprocessed/ali20_g.csv
+Data load
+FILES: ['preprocessed/gc19_a.csv', 'preprocessed/gc19_b.csv', 'preprocessed/gc19_c.csv', 'preprocessed/gc19_d.csv', 'preprocessed/gc19_e.csv', 'preprocessed/gc19_f.csv', 'preprocessed/gc19_g.csv', 'preprocessed/gc19_h.csv', 'preprocessed/gc11.csv', 'preprocessed/ali18.csv', 'preprocessed/ali20_c.csv', 'preprocessed/ali20_g.csv']
+Dataset  preprocessed/gc19_a.csv loaded
+Dataset  preprocessed/gc19_b.csv loaded
+Dataset  preprocessed/gc19_c.csv loaded
+Dataset  preprocessed/gc19_d.csv loaded
+Dataset  preprocessed/gc19_e.csv loaded
+Dataset  preprocessed/gc19_f.csv loaded
+Dataset  preprocessed/gc19_g.csv loaded
+Dataset  preprocessed/gc19_h.csv loaded
+Dataset  preprocessed/gc11.csv loaded
+Dataset  preprocessed/ali18.csv loaded
+Dataset  preprocessed/ali20_c.csv loaded
+Dataset  preprocessed/ali20_g.csv loaded
+Data size  (101512, 288, 2)
+Training size  (83987, 288, 2)
+Training labels size (83987, 2)
+Test size  (17525, 288, 2)
+Test labels size (17525, 2)
+Training (83987, 288, 2) Testing (17525, 288, 2)
+{'first_conv_dim': 16, 'first_conv_kernel': 3, 'first_conv_activation': 'relu', 'cnn_layers': 1, 'second_lstm_dim': 32, 'first_dense_dim': 8, 'first_dense_activation': 'relu', 'mlp_units': array([32, 32]), 'dense_kernel_init': 'he_normal', 'batch_size': 128, 'epochs': 200, 'patience': 50, 'optimizer': 'adam', 'lr': 0.001, 'momentum': 0.9, 'decay': 0.0001}
+ITERATION: 0 HORIZON: 2 WIN: 288
+Epoch 1/200
+New best validation loss:  0.004217485431581736
+525/525 - 16s - 31ms/step - loss: 0.0156 - mae: 0.0713 - mse: 0.0156 - val_loss: 0.0042 - val_mae: 0.0462 - val_mse: 0.0042
+Epoch 2/200
+New best validation loss:  0.003871387802064419
+525/525 - 19s - 35ms/step - loss: 0.0040 - mae: 0.0448 - mse: 0.0040 - val_loss: 0.0039 - val_mae: 0.0440 - val_mse: 0.0039
+Epoch 3/200
+New best validation loss:  0.00368502433411777
+525/525 - 15s - 29ms/step - loss: 0.0038 - mae: 0.0434 - mse: 0.0038 - val_loss: 0.0037 - val_mae: 0.0428 - val_mse: 0.0037
+Epoch 4/200
+525/525 - 19s - 36ms/step - loss: 0.0037 - mae: 0.0428 - mse: 0.0037 - val_loss: 0.0037 - val_mae: 0.0426 - val_mse: 0.0037
+Epoch 5/200
+New best validation loss:  0.003655731910839677
+525/525 - 15s - 29ms/step - loss: 0.0037 - mae: 0.0426 - mse: 0.0037 - val_loss: 0.0037 - val_mae: 0.0425 - val_mse: 0.0037
+Epoch 6/200
+New best validation loss:  0.003561025019735098
+525/525 - 18s - 35ms/step - loss: 0.0036 - mae: 0.0424 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0418 - val_mse: 0.0036
+Epoch 7/200
+New best validation loss:  0.0035391519777476788
+525/525 - 14s - 27ms/step - loss: 0.0036 - mae: 0.0423 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0414 - val_mse: 0.0035
+Epoch 8/200
+525/525 - 24s - 47ms/step - loss: 0.0036 - mae: 0.0421 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0422 - val_mse: 0.0036
+Epoch 9/200
+525/525 - 15s - 28ms/step - loss: 0.0036 - mae: 0.0421 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0425 - val_mse: 0.0036
+Epoch 10/200
+525/525 - 18s - 35ms/step - loss: 0.0036 - mae: 0.0420 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0420 - val_mse: 0.0036
+Epoch 11/200
+New best validation loss:  0.0034977225586771965
+525/525 - 19s - 36ms/step - loss: 0.0036 - mae: 0.0420 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 12/200
+525/525 - 16s - 31ms/step - loss: 0.0036 - mae: 0.0420 - mse: 0.0036 - val_loss: 0.0037 - val_mae: 0.0436 - val_mse: 0.0037
+Epoch 13/200
+525/525 - 19s - 37ms/step - loss: 0.0036 - mae: 0.0418 - mse: 0.0036 - val_loss: 0.0035 - val_mae: 0.0412 - val_mse: 0.0035
+Epoch 14/200
+525/525 - 16s - 30ms/step - loss: 0.0036 - mae: 0.0417 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0423 - val_mse: 0.0036
+Epoch 15/200
+525/525 - 19s - 35ms/step - loss: 0.0036 - mae: 0.0417 - mse: 0.0036 - val_loss: 0.0036 - val_mae: 0.0418 - val_mse: 0.0036
+Epoch 16/200
+New best validation loss:  0.003497360972687602
+525/525 - 16s - 31ms/step - loss: 0.0035 - mae: 0.0417 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0412 - val_mse: 0.0035
+Epoch 17/200
+New best validation loss:  0.0034879252780228853
+525/525 - 18s - 35ms/step - loss: 0.0035 - mae: 0.0416 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 18/200
+525/525 - 16s - 30ms/step - loss: 0.0035 - mae: 0.0417 - mse: 0.0035 - val_loss: 0.0036 - val_mae: 0.0422 - val_mse: 0.0036
+Epoch 19/200
+525/525 - 19s - 36ms/step - loss: 0.0035 - mae: 0.0417 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0414 - val_mse: 0.0035
+Epoch 20/200
+New best validation loss:  0.0034689228050410748
+525/525 - 16s - 31ms/step - loss: 0.0035 - mae: 0.0415 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0412 - val_mse: 0.0035
+Epoch 21/200
+New best validation loss:  0.0034652166068553925
+525/525 - 21s - 40ms/step - loss: 0.0035 - mae: 0.0414 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0413 - val_mse: 0.0035
+Epoch 22/200
+525/525 - 15s - 28ms/step - loss: 0.0035 - mae: 0.0414 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 23/200
+New best validation loss:  0.003456583945080638
+525/525 - 18s - 35ms/step - loss: 0.0035 - mae: 0.0416 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0408 - val_mse: 0.0035
+Epoch 24/200
+525/525 - 16s - 31ms/step - loss: 0.0035 - mae: 0.0415 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0411 - val_mse: 0.0035
+Epoch 25/200
+New best validation loss:  0.0034462669864296913
+525/525 - 19s - 36ms/step - loss: 0.0035 - mae: 0.0414 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 26/200
+525/525 - 16s - 31ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 27/200
+525/525 - 21s - 40ms/step - loss: 0.0035 - mae: 0.0414 - mse: 0.0035 - val_loss: 0.0036 - val_mae: 0.0425 - val_mse: 0.0036
+Epoch 28/200
+525/525 - 20s - 38ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0411 - val_mse: 0.0035
+Epoch 29/200
+525/525 - 16s - 30ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0036 - val_mae: 0.0422 - val_mse: 0.0036
+Epoch 30/200
+New best validation loss:  0.0033987637143582106
+525/525 - 18s - 35ms/step - loss: 0.0035 - mae: 0.0412 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0404 - val_mse: 0.0034
+Epoch 31/200
+525/525 - 17s - 32ms/step - loss: 0.0035 - mae: 0.0411 - mse: 0.0035 - val_loss: 0.0035 - val_mae: 0.0410 - val_mse: 0.0035
+Epoch 32/200
+525/525 - 20s - 38ms/step - loss: 0.0035 - mae: 0.0413 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0409 - val_mse: 0.0034
+Epoch 33/200
+525/525 - 16s - 31ms/step - loss: 0.0034 - mae: 0.0411 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 34/200
+525/525 - 20s - 38ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 35/200
+525/525 - 15s - 29ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 36/200
+New best validation loss:  0.0033952670637518167
+525/525 - 19s - 37ms/step - loss: 0.0035 - mae: 0.0412 - mse: 0.0035 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 37/200
+525/525 - 16s - 30ms/step - loss: 0.0034 - mae: 0.0411 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 38/200
+525/525 - 19s - 36ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0036 - val_mae: 0.0427 - val_mse: 0.0036
+Epoch 39/200
+525/525 - 15s - 29ms/step - loss: 0.0034 - mae: 0.0411 - mse: 0.0034 - val_loss: 0.0037 - val_mae: 0.0431 - val_mse: 0.0037
+Epoch 40/200
+525/525 - 19s - 36ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 41/200
+New best validation loss:  0.0033809980377554893
+525/525 - 16s - 31ms/step - loss: 0.0034 - mae: 0.0408 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0404 - val_mse: 0.0034
+Epoch 42/200
+525/525 - 20s - 38ms/step - loss: 0.0034 - mae: 0.0411 - mse: 0.0034 - val_loss: 0.0035 - val_mae: 0.0419 - val_mse: 0.0035
+Epoch 43/200
+525/525 - 19s - 36ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 44/200
+525/525 - 16s - 31ms/step - loss: 0.0034 - mae: 0.0410 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 45/200
+525/525 - 20s - 37ms/step - loss: 0.0034 - mae: 0.0409 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0409 - val_mse: 0.0034
+Epoch 46/200
+New best validation loss:  0.0033613399136811495
+525/525 - 20s - 38ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0405 - val_mse: 0.0034
+Epoch 47/200
+525/525 - 21s - 40ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0409 - val_mse: 0.0034
+Epoch 48/200
+525/525 - 16s - 30ms/step - loss: 0.0034 - mae: 0.0408 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 49/200
+525/525 - 19s - 36ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0409 - val_mse: 0.0034
+Epoch 50/200
+525/525 - 22s - 41ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0410 - val_mse: 0.0034
+Epoch 51/200
+525/525 - 21s - 40ms/step - loss: 0.0034 - mae: 0.0407 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 52/200
+525/525 - 19s - 37ms/step - loss: 0.0034 - mae: 0.0406 - mse: 0.0034 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 53/200
+525/525 - 17s - 33ms/step - loss: 0.0033 - mae: 0.0406 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0409 - val_mse: 0.0034
+Epoch 54/200
+525/525 - 20s - 38ms/step - loss: 0.0033 - mae: 0.0405 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 55/200
+525/525 - 17s - 33ms/step - loss: 0.0033 - mae: 0.0406 - mse: 0.0033 - val_loss: 0.0035 - val_mae: 0.0422 - val_mse: 0.0035
+Epoch 56/200
+525/525 - 21s - 39ms/step - loss: 0.0033 - mae: 0.0406 - mse: 0.0033 - val_loss: 0.0035 - val_mae: 0.0422 - val_mse: 0.0035
+Epoch 57/200
+525/525 - 21s - 41ms/step - loss: 0.0033 - mae: 0.0405 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0404 - val_mse: 0.0034
+Epoch 58/200
+525/525 - 18s - 34ms/step - loss: 0.0033 - mae: 0.0404 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 59/200
+525/525 - 20s - 37ms/step - loss: 0.0033 - mae: 0.0405 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0412 - val_mse: 0.0034
+Epoch 60/200
+525/525 - 17s - 32ms/step - loss: 0.0033 - mae: 0.0404 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0413 - val_mse: 0.0034
+Epoch 61/200
+525/525 - 20s - 38ms/step - loss: 0.0033 - mae: 0.0404 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 62/200
+525/525 - 17s - 32ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0036 - val_mae: 0.0424 - val_mse: 0.0036
+Epoch 63/200
+525/525 - 20s - 37ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0406 - val_mse: 0.0034
+Epoch 64/200
+525/525 - 19s - 37ms/step - loss: 0.0033 - mae: 0.0403 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 65/200
+525/525 - 17s - 32ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0407 - val_mse: 0.0034
+Epoch 66/200
+New best validation loss:  0.0033286665566265583
+525/525 - 18s - 35ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 67/200
+525/525 - 16s - 30ms/step - loss: 0.0033 - mae: 0.0402 - mse: 0.0033 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 68/200
+New best validation loss:  0.0033207926899194717
+525/525 - 18s - 34ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 69/200
+525/525 - 16s - 31ms/step - loss: 0.0032 - mae: 0.0401 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 70/200
+525/525 - 20s - 38ms/step - loss: 0.0033 - mae: 0.0401 - mse: 0.0033 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 71/200
+New best validation loss:  0.0032986521255224943
+525/525 - 15s - 29ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 72/200
+525/525 - 18s - 35ms/step - loss: 0.0032 - mae: 0.0401 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 73/200
+525/525 - 14s - 27ms/step - loss: 0.0032 - mae: 0.0400 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 74/200
+525/525 - 18s - 35ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0407 - val_mse: 0.0033
+Epoch 75/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 76/200
+525/525 - 18s - 34ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 77/200
+525/525 - 15s - 29ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 78/200
+525/525 - 19s - 36ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 79/200
+525/525 - 15s - 29ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 80/200
+525/525 - 18s - 35ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0034 - val_mae: 0.0410 - val_mse: 0.0034
+Epoch 81/200
+525/525 - 15s - 28ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 82/200
+New best validation loss:  0.003288120962679386
+525/525 - 18s - 35ms/step - loss: 0.0032 - mae: 0.0399 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 83/200
+525/525 - 16s - 31ms/step - loss: 0.0032 - mae: 0.0396 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 84/200
+525/525 - 86s - 163ms/step - loss: 0.0032 - mae: 0.0398 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 85/200
+New best validation loss:  0.003277356503531337
+525/525 - 152s - 290ms/step - loss: 0.0032 - mae: 0.0397 - mse: 0.0032 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 86/200
+525/525 - 145s - 277ms/step - loss: 0.0032 - mae: 0.0397 - mse: 0.0032 - val_loss: 0.0034 - val_mae: 0.0410 - val_mse: 0.0034
+Epoch 87/200
+525/525 - 36s - 68ms/step - loss: 0.0031 - mae: 0.0396 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0408 - val_mse: 0.0034
+Epoch 88/200
+New best validation loss:  0.003263257909566164
+525/525 - 15s - 29ms/step - loss: 0.0031 - mae: 0.0396 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0399 - val_mse: 0.0033
+Epoch 89/200
+525/525 - 19s - 36ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 90/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0396 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 91/200
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 92/200
+New best validation loss:  0.0032601242419332266
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0402 - val_mse: 0.0033
+Epoch 93/200
+525/525 - 17s - 33ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 94/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0407 - val_mse: 0.0033
+Epoch 95/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 96/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0034 - val_mae: 0.0411 - val_mse: 0.0034
+Epoch 97/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0400 - val_mse: 0.0033
+Epoch 98/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0395 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 99/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 100/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0393 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 101/200
+525/525 - 18s - 34ms/step - loss: 0.0031 - mae: 0.0394 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0401 - val_mse: 0.0033
+Epoch 102/200
+New best validation loss:  0.0032362411729991436
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0393 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 103/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 104/200
+525/525 - 15s - 29ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 105/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 106/200
+525/525 - 15s - 28ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 107/200
+525/525 - 14s - 27ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 108/200
+525/525 - 18s - 35ms/step - loss: 0.0031 - mae: 0.0392 - mse: 0.0031 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 109/200
+525/525 - 14s - 27ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 110/200
+525/525 - 19s - 36ms/step - loss: 0.0031 - mae: 0.0391 - mse: 0.0031 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 111/200
+New best validation loss:  0.0031998413614928722
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0391 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 112/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0391 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 113/200
+525/525 - 16s - 31ms/step - loss: 0.0030 - mae: 0.0391 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0405 - val_mse: 0.0033
+Epoch 114/200
+525/525 - 17s - 33ms/step - loss: 0.0030 - mae: 0.0391 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 115/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 116/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 117/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 118/200
+525/525 - 19s - 37ms/step - loss: 0.0030 - mae: 0.0390 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 119/200
+New best validation loss:  0.003182092448696494
+525/525 - 18s - 34ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 120/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 121/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 122/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 123/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 124/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 125/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 126/200
+525/525 - 14s - 27ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 127/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0407 - val_mse: 0.0033
+Epoch 128/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0402 - val_mse: 0.0032
+Epoch 129/200
+525/525 - 18s - 34ms/step - loss: 0.0030 - mae: 0.0389 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 130/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 131/200
+525/525 - 18s - 35ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 132/200
+525/525 - 15s - 28ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 133/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0388 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 134/200
+525/525 - 16s - 30ms/step - loss: 0.0030 - mae: 0.0386 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 135/200
+525/525 - 18s - 34ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 136/200
+525/525 - 15s - 29ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 137/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 138/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 139/200
+525/525 - 19s - 36ms/step - loss: 0.0030 - mae: 0.0387 - mse: 0.0030 - val_loss: 0.0033 - val_mae: 0.0407 - val_mse: 0.0033
+Epoch 140/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0033 - val_mae: 0.0403 - val_mse: 0.0033
+Epoch 141/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0403 - val_mse: 0.0032
+Epoch 142/200
+New best validation loss:  0.003178909420967102
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 143/200
+525/525 - 19s - 37ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0034 - val_mae: 0.0421 - val_mse: 0.0034
+Epoch 144/200
+New best validation loss:  0.00315937795676291
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 145/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 146/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0403 - val_mse: 0.0032
+Epoch 147/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0386 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 148/200
+525/525 - 14s - 27ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 149/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 150/200
+525/525 - 15s - 30ms/step - loss: 0.0029 - mae: 0.0385 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 151/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 152/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 153/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 154/200
+525/525 - 16s - 30ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 155/200
+525/525 - 17s - 32ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 156/200
+525/525 - 14s - 27ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 157/200
+525/525 - 18s - 34ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 158/200
+525/525 - 15s - 28ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 159/200
+525/525 - 17s - 33ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 160/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 161/200
+New best validation loss:  0.0031563902739435434
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0394 - val_mse: 0.0032
+Epoch 162/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0384 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 163/200
+525/525 - 18s - 35ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 164/200
+525/525 - 14s - 27ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 165/200
+New best validation loss:  0.0031543539371341467
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 166/200
+525/525 - 17s - 32ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 167/200
+525/525 - 14s - 27ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 168/200
+525/525 - 19s - 37ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 169/200
+New best validation loss:  0.003148765070363879
+525/525 - 16s - 31ms/step - loss: 0.0029 - mae: 0.0383 - mse: 0.0029 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 170/200
+525/525 - 17s - 33ms/step - loss: 0.0029 - mae: 0.0381 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 171/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 172/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 173/200
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 174/200
+525/525 - 15s - 29ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 175/200
+New best validation loss:  0.003140086308121681
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 176/200
+525/525 - 15s - 29ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0396 - val_mse: 0.0032
+Epoch 177/200
+525/525 - 19s - 36ms/step - loss: 0.0029 - mae: 0.0382 - mse: 0.0029 - val_loss: 0.0032 - val_mae: 0.0405 - val_mse: 0.0032
+Epoch 178/200
+525/525 - 14s - 27ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0397 - val_mse: 0.0032
+Epoch 179/200
+525/525 - 20s - 39ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0401 - val_mse: 0.0032
+Epoch 180/200
+525/525 - 14s - 27ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0033 - val_mae: 0.0406 - val_mse: 0.0033
+Epoch 181/200
+New best validation loss:  0.0031359149143099785
+525/525 - 18s - 34ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 182/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0035 - val_mae: 0.0426 - val_mse: 0.0035
+Epoch 183/200
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0381 - mse: 0.0028 - val_loss: 0.0033 - val_mae: 0.0404 - val_mse: 0.0033
+Epoch 184/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0395 - val_mse: 0.0032
+Epoch 185/200
+525/525 - 19s - 35ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 186/200
+New best validation loss:  0.0031342636793851852
+525/525 - 14s - 27ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 187/200
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 188/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0402 - val_mse: 0.0032
+Epoch 189/200
+525/525 - 14s - 27ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 190/200
+525/525 - 19s - 35ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 191/200
+New best validation loss:  0.003103760303929448
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0393 - val_mse: 0.0031
+Epoch 192/200
+New best validation loss:  0.003102110233157873
+525/525 - 18s - 34ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0392 - val_mse: 0.0031
+Epoch 193/200
+525/525 - 14s - 28ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0399 - val_mse: 0.0032
+Epoch 194/200
+525/525 - 18s - 34ms/step - loss: 0.0028 - mae: 0.0380 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 195/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0395 - val_mse: 0.0031
+Epoch 196/200
+525/525 - 18s - 35ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 197/200
+525/525 - 15s - 28ms/step - loss: 0.0028 - mae: 0.0379 - mse: 0.0028 - val_loss: 0.0031 - val_mae: 0.0396 - val_mse: 0.0031
+Epoch 198/200
+525/525 - 19s - 35ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0398 - val_mse: 0.0032
+Epoch 199/200
+525/525 - 15s - 29ms/step - loss: 0.0028 - mae: 0.0378 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Epoch 200/200
+525/525 - 18s - 34ms/step - loss: 0.0028 - mae: 0.0377 - mse: 0.0028 - val_loss: 0.0032 - val_mae: 0.0400 - val_mse: 0.0032
+Model save id  0000
+
+[1m  1/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m1:20[0m 147ms/step
+[1m  6/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step   
+[1m 11/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 11ms/step
+[1m 16/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 11ms/step
+[1m 21/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 11ms/step
+[1m 26/548[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 31/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 36/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 41/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 46/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 52/548[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 57/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 63/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 11ms/step
+[1m 69/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m 75/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m 81/548[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m 87/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m 92/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m 98/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m104/548[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m110/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m116/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m122/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m128/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m134/548[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m139/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m4s[0m 10ms/step
+[1m145/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m151/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m157/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m163/548[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m168/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m173/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m178/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m184/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m189/548[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m194/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m199/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m205/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m211/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m217/548[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m223/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m229/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m235/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m241/548[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m3s[0m 10ms/step
+[1m247/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m252/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m258/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m264/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m269/548[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m275/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m281/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m286/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m292/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m298/548[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m304/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m309/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m315/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m321/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m325/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m328/548[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m333/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m339/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m344/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 10ms/step
+[1m350/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m1s[0m 10ms/step
+[1m356/548[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m1s[0m 10ms/step
+[1m362/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 10ms/step
+[1m367/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 10ms/step
+[1m372/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 10ms/step
+[1m377/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 10ms/step
+[1m383/548[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 10ms/step
+[1m388/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 10ms/step
+[1m394/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 10ms/step
+[1m400/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 10ms/step
+[1m406/548[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 10ms/step
+[1m411/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m416/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m422/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m427/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m432/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m438/548[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 10ms/step
+[1m443/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 10ms/step
+[1m449/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 10ms/step
+[1m454/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 10ms/step
+[1m459/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 10ms/step
+[1m465/548[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 10ms/step
+[1m470/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step
+[1m476/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step
+[1m482/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step
+[1m487/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step
+[1m492/548[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step
+[1m498/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 10ms/step
+[1m504/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 10ms/step
+[1m509/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 10ms/step
+[1m514/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 10ms/step
+[1m520/548[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 10ms/step
+[1m526/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 10ms/step
+[1m532/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 10ms/step
+[1m538/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 10ms/step
+[1m543/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 10ms/step
+[1m546/548[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 10ms/step
+[1m548/548[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 10ms/step
+[1m548/548[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m6s[0m 10ms/step
+
+[1m  1/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m18s[0m 28ms/step
+[1m  5/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m9s[0m 15ms/step 
+[1m  9/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m10s[0m 16ms/step
+[1m 13/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m10s[0m 16ms/step
+[1m 17/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m9s[0m 15ms/step 
+[1m 21/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m9s[0m 15ms/step
+[1m 25/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m9s[0m 15ms/step
+[1m 29/657[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 34/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 39/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 44/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 49/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 13ms/step
+[1m 51/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 56/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 60/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 65/657[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m 68/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 71/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 74/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 77/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 15ms/step
+[1m 81/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 15ms/step
+[1m 86/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 91/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 95/657[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 14ms/step
+[1m 99/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m103/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m108/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m113/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m118/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 14ms/step
+[1m124/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m130/657[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m7s[0m 13ms/step
+[1m135/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m141/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m147/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m151/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m156/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m161/657[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m166/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m172/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m177/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m6s[0m 13ms/step
+[1m183/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 13ms/step
+[1m189/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m195/657[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m201/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m206/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m212/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m217/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m222/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m227/657[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m233/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m239/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m5s[0m 12ms/step
+[1m244/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m250/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m255/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m260/657[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m265/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m270/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m276/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m282/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m286/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m292/657[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m298/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m304/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m309/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m313/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m4s[0m 12ms/step
+[1m317/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m322/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m328/657[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m333/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m338/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m343/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m349/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m355/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m360/657[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m365/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m370/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 12ms/step
+[1m375/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m381/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m387/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m393/657[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m3s[0m 11ms/step
+[1m398/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m404/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m410/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m416/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m421/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m426/657[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m2s[0m 11ms/step
+[1m431/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m436/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m441/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m447/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m452/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m457/657[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m2s[0m 11ms/step
+[1m462/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m467/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m473/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m2s[0m 11ms/step
+[1m480/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m486/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m492/657[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m1s[0m 11ms/step
+[1m498/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m504/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m510/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m516/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m522/657[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m1s[0m 11ms/step
+[1m529/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m536/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m542/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 11ms/step
+[1m546/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 13ms/step
+[1m553/657[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m1s[0m 13ms/step
+[1m559/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 13ms/step
+[1m561/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 17ms/step
+[1m567/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 17ms/step
+[1m573/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 17ms/step
+[1m580/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 17ms/step
+[1m586/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 16ms/step
+[1m591/657[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m1s[0m 16ms/step
+[1m597/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 16ms/step
+[1m604/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 16ms/step
+[1m610/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 16ms/step
+[1m616/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 16ms/step
+[1m622/657[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 16ms/step
+[1m628/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 16ms/step
+[1m634/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 16ms/step
+[1m641/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 16ms/step
+[1m647/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 16ms/step
+[1m653/657[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 16ms/step
+[1m657/657[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m10s[0m 16ms/step
