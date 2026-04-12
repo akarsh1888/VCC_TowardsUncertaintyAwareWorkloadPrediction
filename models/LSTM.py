@@ -31,7 +31,7 @@ class LSTMPredictor(ModelInterface):
                                'first_dense_activation': [keras.activations.relu, keras.activations.tanh],
                                'dense_kernel_init': ['he_normal', 'glorot_uniform'],
                                'batch_size': [128, 256, 512, 1024],
-                               'epochs': [1000],
+                               'epochs': [200],
                                'patience': [30, 50],
                                'optimizer': ['adam', 'nadam', 'rmsprop', 'sgd'],
                                'lr': [1E-2, 1E-3, 1E-4],
